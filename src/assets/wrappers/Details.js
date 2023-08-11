@@ -9,7 +9,6 @@ const Wrapper = styled.div`
         gap: 30px;
         grid-template-columns: 1fr 2fr;
         background-color: var(--secondary-400);
-        box-shadow: 1px 1px 10px var(--primary-300);
     }
 
     .social-media {
