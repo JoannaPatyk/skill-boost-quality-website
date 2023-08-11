@@ -2,4 +2,42 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: none;
+    text-decoration: none;
+}
+
+/* FONTS */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+:root {
+    /* COLORS */
+    --primary-100: #ffefed;
+    --primary-200: #ffd0c8;
+    --primary-300: #ff826c;
+    --primary-400: #ff7359;
+    --primary-500: #ff6347;
+
+    --secondary-100: #ffffff;
+    --secondary-200: #adadad;
+    --secondary-300: #707070;
+    --secondary-400: #2b2b2b;
+    --secondary-500: #222222;
+
+    --black: #111111;
+    --white: #fefcfd;
+
+    /* FONT */
+    --primary-fontFamily: 'Raleway', sans-serif;
+    --secondary-fontFamily: 'Montserrat', sans-serif;
+
+    /* REST vars */
+    --backgroundColor: var(--white);
+    --borderRadius: 50px;
+    --letterSpacing: 2px;
+    --transition: 0.5s;
+}
+
+body {
+    font-family: var(--primary-fontFamily);
+    color: var(--white);
 }
