@@ -11,7 +11,6 @@ const Wrapper = styled.div`
         justify-content: center;
         flex-direction: column;
         background-color: var(--secondary-400);
-        box-shadow: 1px 1px 10px var(--primary-300);
     }
 
     p {
