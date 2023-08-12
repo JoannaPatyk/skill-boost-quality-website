@@ -36,14 +36,14 @@ const Wrapper = styled.div`
         height: 2rem;
         border-radius: 50%;
         background-color: var(--white);
-        box-shadow: 0 0 20px 9px red;
+        box-shadow: 0 0 20px 9px var(--primary-300);
         cursor: pointer;
         transition: 0.5s;
         animation: pulsating 1.6s linear infinite;
     }
 
     .dot:hover {
-        background-color: #8b0000;
+        background-color: var(--secondary-300);
     }
 
     .washing {

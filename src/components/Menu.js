@@ -16,10 +16,10 @@ function Menu() {
             <div className="menu-container">
                 <h1>Skill Boost Quality</h1>
                 <nav className="menu" ref={menuRef}>
-                    {links.map(({ id, text, path }) => {
+                    {links.map(({ id, text, path, cls }) => {
                         return (
                             <div
-                                className="menu-element"
+                                className={`menu-element ${cls}`}
                                 role="button"
                                 tabIndex={0}
                                 key={id}

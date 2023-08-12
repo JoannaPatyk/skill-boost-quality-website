@@ -11,17 +11,17 @@
 
 :root {
     /* COLORS */
-    --primary-100: #ffefed;
-    --primary-200: #ffd0c8;
-    --primary-300: #ff826c;
-    --primary-400: #ff7359;
-    --primary-500: #ff6347;
+    --primary-100: #f28963;
+    --primary-200: #bf5a36;
+    --primary-300: #f24c27;
 
-    --secondary-100: #ffffff;
-    --secondary-200: #adadad;
-    --secondary-300: #707070;
-    --secondary-400: #2b2b2b;
-    --secondary-500: #222222;
+    --secondary-100: #546467;
+    --secondary-200: #23373c;
+    --secondary-300: #0b2126;
+
+    --grey-100: #eceded;
+    --grey-200: #bcc1bf;
+    --grey-300: #9fa6a3;
 
     --black: #111111;
     --white: #fefcfd;
@@ -40,4 +40,32 @@
 body {
     font-family: var(--primary-fontFamily);
     color: var(--white);
+}
+
+.btn {
+    width: 70%;
+    padding: 0.5rem;
+    margin-left: 0;
+    font-weight: 500;
+    font-size: 0.75rem;
+    font-family: inherit;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    border: 3px solid var(--primary-300);
+    border-radius: 25px;
+    background-color: transparent;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.btn:hover {
+    margin-left: 1rem;
+    background-color: var(--primary-300);
+}
+
+.arrow {
+    margin-top: 1.8rem;
+    font-size: 2.5rem;
+    color: var(--black);
 }

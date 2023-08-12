@@ -10,7 +10,7 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-color: var(--secondary-400);
+        background-color: var(--secondary-300);
     }
 
     p {

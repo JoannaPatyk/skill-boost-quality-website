@@ -2,19 +2,20 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .menu-container {
-        height: 15vh;
+        height: 10vh;
         width: 100%;
         display: grid;
         grid-template-columns: 1fr 2fr;
-        background-color: var(--secondary-500);
+        background-color: var(--secondary-300);
     }
 
     h1 {
         text-align: center;
-        line-height: 15vh;
+        line-height: 10vh;
     }
 
     .menu {
+        position: relative;
         padding-right: 2rem;
         display: flex;
         gap: 30px;
@@ -24,38 +25,39 @@ const Wrapper = styled.div`
     }
 
     .menu-element {
-        width: 140px;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 130px;
         padding: 0.5rem 1rem;
-        font-weight: 500;
+        font-weight: 600;
         text-align: center;
         letter-spacing: var(--letterSpacing);
-        border: 2px solid var(--primary-500);
-        border-radius: 25px;
+        border: 3px solid var(--primary-300);
+        border-radius: 30px;
         transition: var(--transition);
         cursor: pointer;
     }
 
     .menu-element:hover {
-        background-color: var(--primary-500);
-        box-shadow: 4px 4px 1px 2px var(--primary-100);
-        transform: scale(0.95);
+        top: 40%;
+        background-color: var(--primary-300);
     }
 
-    @media (max-width: 600px) {
-        .menu-element {
-            font-size: 0.9rem;
-        }
+    .start {
+        right: 41%;
     }
 
-    @media (max-width: 450px) {
-        .menu {
-            padding: 0.35rem 0;
-            gap: 5px;
-        }
+    .about {
+        right: 29%;
+    }
 
-        .menu-element {
-            font-size: 0.75rem;
-        }
+    .services {
+        right: 17%;
+    }
+
+    .contact {
+        right: 5%;
     }
 `;
 

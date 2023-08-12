@@ -8,7 +8,7 @@ const Wrapper = styled.div`
         display: grid;
         gap: 30px;
         grid-template-columns: 1fr 2fr;
-        background-color: var(--secondary-400);
+        background-color: var(--secondary-200);
     }
 
     .social-media {
@@ -47,6 +47,11 @@ const Wrapper = styled.div`
     .contact-data p {
         color: var(--white);
         font-weight: 400;
+        font-size: 1rem;
+    }
+
+    .icon {
+        font-size: 1.2rem;
     }
 `;
 
