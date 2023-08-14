@@ -2,9 +2,10 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .information-container {
-        height: 45vh;
+        height: 40vh;
         width: 100%;
         background-color: var(--secondary-300);
+        box-shadow: 2px 2px 20px var(--secondary-300);
     }
 
     .elements {
@@ -12,45 +13,65 @@ const Wrapper = styled.div`
         width: 70%;
         margin: 0 auto;
         display: flex;
-        gap: 50px;
+        gap: 60px;
         align-items: center;
         justify-content: center;
     }
 
-    .mission {
-        line-height: 2;
-        border-right: 2px solid var(--white);
-    }
-
-    .mission span {
+    .elements span {
         font-weight: 600;
         color: var(--primary-100);
     }
 
     .mission,
+    .services {
+        width: 40%;
+    }
+
     .data,
     .address {
-        width: 40%;
-        display: flex;
+        width: 20%;
+    }
+
+    .mission,
+    .data,
+    .address,
+    .services {
+        height: 100%;
+        display: grid;
         gap: 10px;
-        flex-direction: column;
+        grid-template-rows: 1fr 4fr;
     }
 
-    h5 {
-        font-weight: 300;
-        padding-right: 2rem;
-    }
-
+    .mission h2,
     .data h2,
-    .address h2 {
+    .address h2,
+    .services h2 {
         padding: 1rem 0;
         margin: 1rem 0;
         border-bottom: 2px solid var(--white);
-    }
-
-    h2 {
         color: var(--primary-300);
         text-transform: uppercase;
+        text-align: left;
+    }
+
+    .mission p,
+    .data p,
+    .address p,
+    .services p {
+        font-size: 0.8rem;
+        color: var(--white);
+        letter-spacing: 1px;
+        text-decoration: none;
+        line-height: 2.2;
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .services p:hover {
+        font-weight: 600;
+        border-radius: 30px;
+        background-color: var(--primary-100);
     }
 `;
 

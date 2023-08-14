@@ -15,6 +15,8 @@ const Wrapper = styled.div`
         gap: 20px;
         align-items: center;
         justify-content: center;
+        text-decoration: none;
+        color: var(--white);
     }
 
     .banner-container h1 {

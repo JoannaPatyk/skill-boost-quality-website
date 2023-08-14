@@ -4,6 +4,8 @@ import { PiCertificateLight, PiChartLineUp, PiFactory } from 'react-icons/pi';
 import { GiChicken } from 'react-icons/gi';
 import { SlMagnifier } from 'react-icons/sl';
 import { FaHandshakeAngle } from 'react-icons/fa6';
+import Banner from '../components/Banner';
+import Information from '../components/Information';
 
 function Services() {
     return (
@@ -78,6 +80,8 @@ function Services() {
                     <button className="btn service-btn">dowiedz się więcej</button>
                 </div>
             </div>
+            <Banner />
+            <Information />
         </Wrapper>
     );
 }

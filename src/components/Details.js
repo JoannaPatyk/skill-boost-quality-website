@@ -8,8 +8,12 @@ function Details() {
         <Wrapper>
             <div className="details-container">
                 <div className="social-media">
-                    <AiOutlineInstagram className="social-icon" />
-                    <AiFillFacebook className="social-icon" />
+                    <a href="https://www.instagram.com" className="social-icon">
+                        <AiOutlineInstagram />
+                    </a>
+                    <a href="https://www.facebook.com" className="social-icon">
+                        <AiFillFacebook />
+                    </a>
                 </div>
                 <div className="contact-data-container">
                     <div className="contact-data">
@@ -18,7 +22,9 @@ function Details() {
                     </div>
                     <div className="contact-data">
                         <HiOutlineMail className="icon" />
-                        <p>skill-boost-quality@gmail.com</p>
+                        <p>
+                            <a href="mailto:skill-boost-quality@gmail.com">skill-boost-quality@gmail.com</a>
+                        </p>
                     </div>
                 </div>
             </div>
