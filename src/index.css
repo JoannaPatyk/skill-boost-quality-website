@@ -7,7 +7,7 @@
 }
 
 /* FONTS */
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Raleway:wght@100;200;300;400;500;600;700;800;900&display=swap');
 
 :root {
     /* COLORS */
@@ -20,15 +20,15 @@
     --secondary-300: #0b2126;
 
     --grey-100: #eceded;
-    --grey-200: #bcc1bf;
+    --grey-200: #c2c5c4;
     --grey-300: #9fa6a3;
 
     --black: #111111;
     --white: #fefcfd;
 
     /* FONT */
-    --primary-fontFamily: 'Raleway', sans-serif;
-    --secondary-fontFamily: 'Montserrat', sans-serif;
+    --primary-fontFamily: 'Poppins', sans-serif;
+    --secondary-fontFamily: 'Raleway', sans-serif;
 
     /* REST vars */
     --backgroundColor: var(--white);
@@ -40,27 +40,29 @@
 body {
     font-family: var(--primary-fontFamily);
     color: var(--white);
+    font-weight: 200;
 }
 
 .btn {
     width: 70%;
-    padding: 0.5rem;
-    margin-left: 0;
-    font-weight: 500;
-    font-size: 0.75rem;
+    padding: 0.25rem;
+    font-weight: 200;
+    font-size: 1.2rem;
     font-family: inherit;
+    color: var(--black);
     text-align: center;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     text-transform: uppercase;
-    border: 3px solid var(--primary-300);
+    border: none;
     border-radius: 25px;
-    background-color: transparent;
+    background-color: var(--primary-100);
+    animation: button 2s infinite;
     transition: 0.5s;
     cursor: pointer;
 }
 
 .btn:hover {
-    margin-left: 1rem;
+    color: var(--white);
     background-color: var(--primary-300);
 }
 
@@ -68,4 +70,38 @@ body {
     margin-top: 1.8rem;
     font-size: 2.5rem;
     color: var(--black);
+}
+
+@keyframes arrow {
+    0% {
+        opacity: 1;
+        padding: 0;
+    }
+    25% {
+        opacity: 0.85;
+    }
+    50% {
+        opacity: 0.85;
+        padding-left: 0.5rem;
+    }
+    75% {
+        opacity: 0.85;
+    }
+    100% {
+        opacity: 1;
+        padding: 0;
+    }
+}
+
+@keyframes button {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(0.95);
+    }
+
+    100% {
+        transform: scale(1);
+    }
 }

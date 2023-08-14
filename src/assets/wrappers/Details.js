@@ -46,7 +46,7 @@ const Wrapper = styled.div`
 
     .contact-data p {
         color: var(--white);
-        font-weight: 400;
+        font-weight: 200;
         font-size: 1rem;
     }
 
