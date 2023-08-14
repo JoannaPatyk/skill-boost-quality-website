@@ -3,7 +3,10 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .values-container {
         min-height: 80vh;
-        background-color: var(--secondary-300);
+        display: grid;
+        grid-template-rows: 1fr 4fr;
+        background-color: var(--secondary-200);
+        box-shadow: 2px 2px 20px var(--secondary-300);
     }
 
     h1 {
@@ -17,37 +20,38 @@ const Wrapper = styled.div`
 
     .values {
         width: 70%;
-        margin: 2rem auto;
-        display: flex;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+        display: grid;
+        grid-template-columns: 2fr 2fr;
+        place-items: center;
         gap: 50px;
         justify-content: center;
+        align-items: center;
     }
 
     .value {
         position: relative;
-        width: 35%;
-        height: 50vh;
+        width: 100%;
+        height: 30vh;
         padding: 2rem;
-        margin-bottom: 2rem;
+        color: var(--black);
         display: grid;
         gap: 30px;
         grid-template-rows: 0.5fr 4fr;
-        justify-content: center;
-        background-color: var(--primary-100);
-        box-shadow: 5px 5px 10px var(--secondary-100);
+        background-color: var(--white);
+        box-shadow: 5px 5px 5px var(--black);
         border-radius: 30px;
         overflow: hidden;
-        transition: 0.5s;
-        cursor: pointer;
     }
 
     .value-icon {
         position: absolute;
         bottom: -50px;
         right: -50px;
-        font-size: 18rem;
-        color: var(--primary-300);
-        opacity: 0.2;
+        font-size: 20rem;
+        color: var(--secondary-100);
+        opacity: 0.1;
     }
 
     h2 {

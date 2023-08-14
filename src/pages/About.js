@@ -3,6 +3,8 @@ import Wrapper from '../assets/wrappers/About';
 import men from '../assets/img/men.jpg';
 import { HiArrowLongDown } from 'react-icons/hi2';
 import dot from '../assets/img/geometric.png';
+import Banner from '../components/Banner';
+import Information from '../components/Information';
 
 function About() {
     return (
@@ -74,6 +76,8 @@ function About() {
                     </div>
                 </div>
             </div>
+            <Banner />
+            <Information />
         </Wrapper>
     );
 }

@@ -20,7 +20,11 @@ const Wrapper = styled.div`
     }
 
     .social-icon {
-        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        font-size: 2rem;
+        color: var(--white);
+        text-decoration: none;
         transition: 0.5s;
         cursor: pointer;
     }
@@ -42,16 +46,28 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         gap: 10px;
+        color: var(--white);
+        transition: 0.5s;
+        cursor: pointer;
+    }
+
+    .contact-data:hover {
+        color: var(--primary-300);
     }
 
     .contact-data p {
         color: var(--white);
-        font-weight: 200;
+        font-weight: 400;
         font-size: 1rem;
     }
 
+    a {
+        color: var(--white);
+        text-decoration: none;
+    }
+
     .icon {
-        font-size: 1.2rem;
+        font-size: 1.3rem;
     }
 `;
 
