@@ -2,7 +2,7 @@ import React from 'react';
 import Wrapper from '../assets/wrappers/About';
 import men from '../assets/img/men.jpg';
 import { HiArrowLongDown } from 'react-icons/hi2';
-import dot from '../assets/img/dot.png';
+import dot from '../assets/img/geometric.png';
 
 function About() {
     return (

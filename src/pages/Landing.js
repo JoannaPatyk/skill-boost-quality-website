@@ -1,29 +1,34 @@
 import React from 'react';
 import Wrapper from '../assets/wrappers/Landing';
 import factory from '../assets/img/background-img.jpg';
+import services from '../utils/services';
+import Values from '../components/Values';
+import Mission from '../components/Mission';
+import Banner from '../components/Banner';
+import Information from '../components/Information';
+import ContactForm from '../components/ContactForm';
 
 function Landing() {
     return (
         <Wrapper>
-            <div className="container">
-                <div className="background">
+            <div className="landing-container">
+                <div className="landing-background">
                     <img src={factory} alt="Przedsiębiorstwo" />
-
-                    <div className="dot washing"></div>
-                    <h4 className="washing-title">audyt mycia</h4>
-
-                    <div className="dot training"></div>
-                    <h4 className="training-title">szkolenia</h4>
-
-                    <div className="dot systems"></div>
-                    <h4 className="systems-title">audyt systemów</h4>
-
-                    <div className="dot expertise"></div>
-                    <h4 className="expertise-title">ekspertyza</h4>
-
-                    <div className="dot operations"></div>
-                    <h4 className="operations-title">działanie firm</h4>
+                    {services.map(({ id, icon, text, cls }) => {
+                        return (
+                            <div key={id}>
+                                {icon}
+                                <div className={`dot ${cls}`}></div>
+                                <h4 className={`${cls}-title`}>{text}</h4>
+                            </div>
+                        );
+                    })}
                 </div>
+                <Values />
+                <Mission />
+                <ContactForm />
+                <Banner />
+                <Information />
             </div>
         </Wrapper>
     );

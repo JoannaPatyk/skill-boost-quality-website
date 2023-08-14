@@ -17,13 +17,13 @@ const Wrapper = styled.div`
     .services-title span {
         color: var(--primary-300);
         font-size: 1.5rem;
-        font-weight: 800;
+        font-weight: 200;
     }
 
     .services-title h3 {
         width: 60%;
         color: var(--black);
-        font-weight: 400;
+        font-weight: 200;
         margin-top: 2rem;
         text-align: center;
         line-height: 1.6;
@@ -39,14 +39,6 @@ const Wrapper = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 10;
-    }
-
-    .img-container h1 {
-        text-transform: uppercase;
-        line-height: 30vh;
-        text-align: center;
-        font-size: 5rem;
-        letter-spacing: 0.5rem;
     }
 
     h2 {
@@ -76,6 +68,7 @@ const Wrapper = styled.div`
         background-color: var(--grey-100);
         padding: 2rem;
         border-radius: 30px;
+        box-shadow: 5px 5px 10px var(--secondary-300);
         transition: 0.5s;
         cursor: pointer;
     }
@@ -101,7 +94,7 @@ const Wrapper = styled.div`
     }
 
     span {
-        font-weight: 600;
+        font-weight: 200;
     }
 
     .dot {

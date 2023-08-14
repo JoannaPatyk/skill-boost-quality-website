@@ -10,6 +10,7 @@ const Wrapper = styled.div`
     }
 
     .dot {
+        width: 80%;
         position: absolute;
         opacity: 0.05;
         z-index: -100;

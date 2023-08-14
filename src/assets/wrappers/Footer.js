@@ -2,15 +2,11 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .footer-container {
-        position: relative;
         height: 6vh;
-        width: 100%;
-        padding-right: 2rem;
         display: flex;
         align-items: center;
         justify-content: center;
-        flex-direction: column;
-        background-color: var(--secondary-300);
+        background-color: var(--secondary-200);
     }
 
     p {
@@ -19,9 +15,9 @@ const Wrapper = styled.div`
         font-size: 0.9rem;
     }
 
-    small {
-        font-size: 0.7rem;
+    span {
         font-weight: 500;
+        color: var(--primary-100);
     }
 `;
 

@@ -5,8 +5,9 @@ function Footer() {
     return (
         <Wrapper>
             <div className="footer-container">
-                <p>Skill Boost Quality</p>
-                <p>Copyright © 2023 JP || All rights reserved</p>
+                <p>
+                    <span>Skill Boost Quality </span>|| Copyright © 2023 JP || All rights reserved
+                </p>
             </div>
         </Wrapper>
     );

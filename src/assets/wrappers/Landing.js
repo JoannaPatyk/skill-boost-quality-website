@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 const Wrapper = styled.div`
-    .container {
+    .landing-container {
         display: flex;
         justify-content: center;
+        flex-direction: column;
     }
 
-    .background {
+    .landing-background {
         position: relative;
         width: 100%;
         display: flex;

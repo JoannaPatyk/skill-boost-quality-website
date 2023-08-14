@@ -30,7 +30,7 @@ const Wrapper = styled.div`
         transform: translateY(-50%);
         width: 130px;
         padding: 0.5rem 1rem;
-        font-weight: 600;
+        font-weight: 200;
         text-align: center;
         letter-spacing: var(--letterSpacing);
         border: 3px solid var(--primary-300);
