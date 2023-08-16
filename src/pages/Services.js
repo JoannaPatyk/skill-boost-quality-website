@@ -1,9 +1,12 @@
 import React from 'react';
 import Wrapper from '../assets/wrappers/Services';
+import { Link } from 'react-router-dom';
+
 import { PiCertificateLight, PiChartLineUp, PiFactory } from 'react-icons/pi';
 import { GiChicken } from 'react-icons/gi';
 import { SlMagnifier } from 'react-icons/sl';
 import { FaHandshakeAngle } from 'react-icons/fa6';
+
 import Banner from '../components/Banner';
 import Information from '../components/Information';
 
@@ -31,8 +34,11 @@ function Services() {
                         Przeprowadzenie audytów systemów zarządzania, w tym wewnętrzne i dostawców,{' '}
                         <span>dostarczając cennych wskazówek</span> dla doskonalenia procesów i relacji biznesowych.
                     </p>
-                    <button className="btn service-btn">dowiedz się więcej</button>
+                    <Link to="/systems-audit" className="btn service-btn">
+                        więcej
+                    </Link>
                 </div>
+
                 <div className="service">
                     <GiChicken className="service-icon" />
                     <h3>Audyty mycia i dezynfekcji ferm drobiu</h3>
@@ -40,8 +46,11 @@ function Services() {
                         Kompleksowe audyty mycia i dezynfekcji ferm drobiu, które mają na celu zapewnienie, że ich
                         środowisko jest czyste, bezpieczne i <span>zgodne z regulacjami branżowymi</span>.
                     </p>
-                    <button className="btn service-btn">dowiedz się więcej</button>
+                    <Link to="/washing-audit" className="btn service-btn">
+                        więcej
+                    </Link>
                 </div>
+
                 <div className="service">
                     <PiFactory className="service-icon" />
                     <h3>Ekspertyza oceny zgodności</h3>
@@ -49,8 +58,11 @@ function Services() {
                         Niezależne ekspertyzy oceny zgodności procesów, produktów i systemów w firmach spożywczych,
                         potwierdzające, że <span>działania są zgodne z wymaganiami</span> regulacyjnymi i standardami.
                     </p>
-                    <button className="btn service-btn">dowiedz się więcej</button>
+                    <Link to="/expertise" className="btn service-btn">
+                        więcej
+                    </Link>
                 </div>
+
                 <div className="service">
                     <SlMagnifier className="service-icon" />
                     <h3>Zewnętrzne spojrzenie na działanie firmy</h3>
@@ -59,8 +71,11 @@ function Services() {
                         oraz optymalizacji co przyczynia się do{' '}
                         <span>podniesienia konkurencyjności i efektywności</span>.
                     </p>
-                    <button className="btn service-btn">dowiedz się więcej</button>
+                    <Link to="/company-operations" className="btn service-btn">
+                        więcej
+                    </Link>
                 </div>
+
                 <div className="service">
                     <PiChartLineUp className="service-icon" />
                     <h3>Optymalizacja systemów zarządzania</h3>
@@ -68,7 +83,9 @@ function Services() {
                         Wsparcie w wdrażaniu, analizie, prowadzeniu oraz <span>optymalizacji systemów zarządzania</span>
                         jakością, bezpieczeństwem żywności oraz innymi aspektami operacyjnymi.
                     </p>
-                    <button className="btn service-btn">dowiedz się więcej</button>
+                    <Link to="/system-optimization" className="btn service-btn">
+                        więcej
+                    </Link>
                 </div>
                 <div className="service">
                     <PiCertificateLight className="service-icon" />
@@ -77,7 +94,9 @@ function Services() {
                         Szkolenia dla pracowników oraz kadry zarządzającej w firmach spożywczych, które pomagają
                         <span>podnosić kwalifikacje</span>, świadomość oraz kompetencje pracowników.
                     </p>
-                    <button className="btn service-btn">dowiedz się więcej</button>
+                    <Link to="/training" className="btn service-btn">
+                        więcej
+                    </Link>
                 </div>
             </div>
             <Banner />
