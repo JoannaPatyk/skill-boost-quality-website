@@ -12,18 +12,22 @@ const Wrapper = styled.div`
         justify-content: center;
         align-items: center;
         margin: 3rem auto 2rem auto;
+        color: var(--black);
+    }
+    .services-title h2 {
+        font-weight: 400;
     }
 
     .services-title span {
         color: var(--primary-300);
         font-size: 1.5rem;
-        font-weight: 200;
+        font-weight: 600;
     }
 
     .services-title h3 {
         width: 60%;
         color: var(--black);
-        font-weight: 200;
+        font-weight: 300;
         margin-top: 2rem;
         text-align: center;
         line-height: 1.6;
@@ -32,8 +36,8 @@ const Wrapper = styled.div`
 
     .img-container {
         position: relative;
-        background-image: url('https://img.freepik.com/darmowe-zdjecie/surowy-kurczaka-mieso-skrzydlo-na-drewnianej-tnacej-desce-i-talerzu-lub_74190-2574.jpg?w=1380&t=st=1691916528~exp=1691917128~hmac=ab970145daea032e35bc3a61c46d1d4499bb36af14333b5030614168e8c920ae');
-        min-height: 30vh;
+        background-image: url('https://cdn.pixabay.com/photo/2019/09/13/15/13/chickens-4474176_1280.jpg');
+        min-height: 60vh;
         background-attachment: fixed;
         background-position: center;
         background-repeat: no-repeat;
@@ -41,23 +45,13 @@ const Wrapper = styled.div`
         z-index: 10;
     }
 
-    h2 {
-        color: var(--black);
-        text-align: center;
-    }
-
-    h3,
-    p {
-        color: var(--black);
-    }
-
     .services-description {
         width: 70%;
         display: grid;
         place-items: center;
-        gap: 50px 80px;
+        gap: 80px;
         grid-template-columns: 2fr 2fr 2fr;
-        margin: 4rem auto;
+        margin: 6rem auto;
     }
 
     .service {
@@ -65,16 +59,15 @@ const Wrapper = styled.div`
         justify-content: center;
         flex-direction: column;
         gap: 40px;
-        background-color: var(--grey-100);
         padding: 2rem;
         border-radius: 30px;
-        box-shadow: 5px 5px 10px var(--secondary-300);
+        box-shadow: 8px 8px 10px var(--grey-300);
         transition: 0.5s;
         cursor: pointer;
     }
 
     .service:hover {
-        transform: scale(1.15);
+        transform: scale(1.05);
     }
 
     .service-icon {
@@ -82,27 +75,25 @@ const Wrapper = styled.div`
         color: var(--primary-300);
     }
 
-    h3 {
+    .service h3,
+    .service p {
+        color: var(--black);
+    }
+
+    .service h3 {
         width: 60%;
         padding-left: 1rem;
         border-left: 3px solid var(--primary-300);
         text-transform: uppercase;
     }
 
-    p {
+    .service p {
         line-height: 1.8;
     }
 
-    span {
-        font-weight: 200;
-    }
-
-    .dot {
-        position: absolute;
-        top: 0;
-        left: 0;
-        opacity: 0.05;
-        z-index: -100;
+    .service-btn {
+        width: 40%;
+        font-size: 0.9rem;
     }
 `;
 

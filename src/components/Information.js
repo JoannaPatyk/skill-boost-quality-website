@@ -40,7 +40,7 @@ function Information() {
                                 </p>
                             </Link>
 
-                            <Link to="/operations-companies">
+                            <Link to="/system-optimization">
                                 <p>
                                     <MdKeyboardDoubleArrowRight className="banner-icon" />
                                     Optymalizacja systemów zarządzania
@@ -58,6 +58,13 @@ function Information() {
                                 <p>
                                     <MdKeyboardDoubleArrowRight className="banner-icon" />
                                     Audyty Mycia i Dezynfekcji Ferm drobiu
+                                </p>
+                            </Link>
+
+                            <Link to="/company-operations">
+                                <p>
+                                    <MdKeyboardDoubleArrowRight className="banner-icon" />
+                                    Zewnętrzne spojrzenie na działanie firmy
                                 </p>
                             </Link>
                         </div>

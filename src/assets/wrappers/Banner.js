@@ -2,11 +2,12 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .banner-container {
-        height: 20vh;
+        height: 18vh;
         width: 100%;
         display: flex;
         align-items: center;
         justify-content: center;
+        z-index: 100;
         background-color: var(--primary-100);
     }
 
