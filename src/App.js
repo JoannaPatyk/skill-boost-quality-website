@@ -1,12 +1,12 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import Details from './components/Details';
 import Menu from './components/Menu';
+import Footer from './components/Footer';
 import Landing from './pages/Landing';
 import Services from './pages/Services';
 import About from './pages/About';
 import Contact from './pages/Contact';
-import Footer from './components/Footer';
 
 import Expertise from './pages/subpage/Expertise';
 import OperationsCompanies from './pages/subpage/OperationsCompanies';
@@ -14,7 +14,35 @@ import SystemsAudit from './pages/subpage/SystemsAudit';
 import Training from './pages/subpage/Training';
 import WashingAudit from './pages/subpage/WashingAudit';
 
+import { MdKeyboardDoubleArrowUp } from 'react-icons/md';
+
 function App() {
+    const [showButton, setShowButton] = useState(false);
+
+    useEffect(() => {
+        const handleScroll = () => {
+            const position = window.pageYOffset;
+            const windowHeight = window.innerHeight;
+            const halfWindowHeight = windowHeight / 2;
+
+            if (position > halfWindowHeight) {
+                setShowButton(true);
+            } else {
+                setShowButton(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
+
+    const handleButtonUp = () => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    };
     return (
         <Router>
             <div className="App">
@@ -33,6 +61,11 @@ function App() {
                     <Route path="contact" element={<Contact />} />
                 </Routes>
                 <Footer />
+                {showButton && (
+                    <button id="btn-up" onClick={handleButtonUp}>
+                        <MdKeyboardDoubleArrowUp className="btn-up-icon" />
+                    </button>
+                )}
             </div>
         </Router>
     );

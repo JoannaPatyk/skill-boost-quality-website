@@ -72,6 +72,31 @@ body {
     color: var(--black);
 }
 
+#btn-up {
+    position: fixed;
+    top: 85%;
+    right: 3%;
+    z-index: 100;
+    width: 40px;
+    height: 40px;
+    border: none;
+    border-radius: 50%;
+    color: var(--white);
+    background-color: var(--primary-100);
+    opacity: 0.8;
+    transition: var(--transition);
+    cursor: pointer;
+}
+
+#btn-up:hover {
+    opacity: 1;
+    background-color: var(--primary-300);
+}
+
+.btn-up-icon {
+    font-size: 1.2rem;
+}
+
 @keyframes arrow {
     0% {
         opacity: 1;
