@@ -8,7 +8,11 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         color: var(--black);
-        background-color: var(--grey-100);
+        background-image: url('https://raw.githubusercontent.com/JoannaPatyk/skill-boost-quality-website/main/src/assets/img/building.jpg?token=GHSAT0AAAAAAB4247ERMP5KAKP23HTU6MBYZG5ACCA');
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
     }
 
     .form-container {

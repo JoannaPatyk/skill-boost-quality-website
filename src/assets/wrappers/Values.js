@@ -35,11 +35,9 @@ const Wrapper = styled.div`
         width: 100%;
         height: 30vh;
         padding: 2rem;
-        color: var(--black);
         display: grid;
         gap: 30px;
         grid-template-rows: 0.5fr 4fr;
-        background-color: var(--white);
         box-shadow: 5px 5px 5px var(--black);
         border-radius: 30px;
         overflow: hidden;

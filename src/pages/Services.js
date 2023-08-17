@@ -1,16 +1,32 @@
 import React from 'react';
-import Wrapper from '../assets/wrappers/Services';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
-import { PiCertificateLight, PiChartLineUp, PiFactory } from 'react-icons/pi';
-import { GiChicken } from 'react-icons/gi';
-import { SlMagnifier } from 'react-icons/sl';
-import { FaHandshakeAngle } from 'react-icons/fa6';
+import Wrapper from '../assets/wrappers/Services';
 
 import Banner from '../components/Banner';
 import Information from '../components/Information';
 
+import services from '../utils/services';
+
 function Services() {
+    const navigate = useNavigate();
+
+    const handleLinkClick = (to) => {
+        navigate(to);
+        window.scrollTo(0, 0);
+    };
+
+    const renderedServices = services.map(({ id, icon, title, description, to }) => (
+        <div className="service" key={id}>
+            {icon}
+            <h3>{title}</h3>
+            <p>{description}</p>
+            <Link to={to} className="btn service-btn" onClick={() => handleLinkClick(to)}>
+                więcej
+            </Link>
+        </div>
+    ));
+
     return (
         <Wrapper>
             <div className="img-container"></div>
@@ -26,79 +42,7 @@ function Services() {
                     gotowym pomóc Ci w osiągnięciu optymalnych wyników...
                 </h3>
             </div>
-            <div className="services-description">
-                <div className="service">
-                    <FaHandshakeAngle className="service-icon" />
-                    <h3>Audyty systemów zarządzania</h3>
-                    <p>
-                        Przeprowadzenie audytów systemów zarządzania, w tym wewnętrzne i dostawców,{' '}
-                        <span>dostarczając cennych wskazówek</span> dla doskonalenia procesów i relacji biznesowych.
-                    </p>
-                    <Link to="/systems-audit" className="btn service-btn">
-                        więcej
-                    </Link>
-                </div>
-
-                <div className="service">
-                    <GiChicken className="service-icon" />
-                    <h3>Audyty mycia i dezynfekcji ferm drobiu</h3>
-                    <p>
-                        Kompleksowe audyty mycia i dezynfekcji ferm drobiu, które mają na celu zapewnienie, że ich
-                        środowisko jest czyste, bezpieczne i <span>zgodne z regulacjami branżowymi</span>.
-                    </p>
-                    <Link to="/washing-audit" className="btn service-btn">
-                        więcej
-                    </Link>
-                </div>
-
-                <div className="service">
-                    <PiFactory className="service-icon" />
-                    <h3>Ekspertyza oceny zgodności</h3>
-                    <p>
-                        Niezależne ekspertyzy oceny zgodności procesów, produktów i systemów w firmach spożywczych,
-                        potwierdzające, że <span>działania są zgodne z wymaganiami</span> regulacyjnymi i standardami.
-                    </p>
-                    <Link to="/expertise" className="btn service-btn">
-                        więcej
-                    </Link>
-                </div>
-
-                <div className="service">
-                    <SlMagnifier className="service-icon" />
-                    <h3>Zewnętrzne spojrzenie na działanie firmy</h3>
-                    <p>
-                        Zewnętrzne spojrzenie na działanie firm w branży spożywczej, identyfikacja obszarów do poprawy
-                        oraz optymalizacji co przyczynia się do{' '}
-                        <span>podniesienia konkurencyjności i efektywności</span>.
-                    </p>
-                    <Link to="/company-operations" className="btn service-btn">
-                        więcej
-                    </Link>
-                </div>
-
-                <div className="service">
-                    <PiChartLineUp className="service-icon" />
-                    <h3>Optymalizacja systemów zarządzania</h3>
-                    <p>
-                        Wsparcie w wdrażaniu, analizie, prowadzeniu oraz <span>optymalizacji systemów zarządzania</span>
-                        jakością, bezpieczeństwem żywności oraz innymi aspektami operacyjnymi.
-                    </p>
-                    <Link to="/system-optimization" className="btn service-btn">
-                        więcej
-                    </Link>
-                </div>
-                <div className="service">
-                    <PiCertificateLight className="service-icon" />
-                    <h3>Szkolenia i podnoszenie kwalifikacji</h3>
-                    <p>
-                        Szkolenia dla pracowników oraz kadry zarządzającej w firmach spożywczych, które pomagają
-                        <span>podnosić kwalifikacje</span>, świadomość oraz kompetencje pracowników.
-                    </p>
-                    <Link to="/training" className="btn service-btn">
-                        więcej
-                    </Link>
-                </div>
-            </div>
+            <div className="services-description">{renderedServices}</div>
             <Banner />
             <Information />
         </Wrapper>

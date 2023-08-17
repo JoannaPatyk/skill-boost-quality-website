@@ -20,6 +20,7 @@ const Wrapper = styled.div`
 
     .elements span {
         font-weight: 600;
+        font-size: 0.8rem;
         color: var(--primary-100);
     }
 
@@ -59,6 +60,7 @@ const Wrapper = styled.div`
     .data p,
     .address p,
     .services p {
+        padding: 0 0.2rem;
         font-size: 0.8rem;
         color: var(--white);
         letter-spacing: 1px;
@@ -68,9 +70,17 @@ const Wrapper = styled.div`
         cursor: pointer;
     }
 
-    .services p:hover {
-        font-weight: 600;
-        border-radius: 30px;
+    #service-link-menu {
+        display: flex;
+        align-items: center;
+        gap: 5px;
+        color: var(--white);
+        border: none;
+        background-color: transparent;
+    }
+
+    #service-link-menu:hover {
+        width: 100%;
         background-color: var(--primary-100);
     }
 `;

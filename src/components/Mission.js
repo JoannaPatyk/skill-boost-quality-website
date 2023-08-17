@@ -1,28 +1,33 @@
 import React from 'react';
 import Wrapper from '../assets/wrappers/Mission';
-import bg from '../assets/img/geometric.png';
+import backgroundImage from '../assets/img/geometric.png';
 
 function Mission() {
     return (
         <Wrapper>
             <div className="mission-container">
                 <h1>
-                    Moja misją jest <span>wzmocnienie umiejętności i jakości</span> naszych Klientów.
+                    Naszą misją jest <span>wzmocnienie umiejętności i jakości</span> naszych Klientów.
                 </h1>
-                <div className="mission-text">
-                    <p>
-                        Naszym głównym celem jest nie tylko identyfikacja obszarów, w których istnieje potencjał do
-                        poprawy, lecz także dostarczanie spersonalizowanych i innowacyjnych rozwiązań, które generują
-                        realne, mierzalne wzrosty wydajności i jakości w ich działalności.
-                    </p>
-                    <p>
-                        Poprzez naszą zaawansowaną wiedzę branżową i strategie dostosowane do indywidualnych potrzeb,
-                        dążymy do przekształcania perspektyw naszych klientów, umożliwiając im osiągnięcie nowych
-                        poziomów doskonałości oraz zwiększenie konkurencyjności na rynku.
-                    </p>
-                </div>
-
-                <img src={bg} className="bg-image" alt="" />
+                <section className="mission-text">
+                    <article>
+                        <h2>Identyfikacja obszarów poprawy</h2>
+                        <p>
+                            Naszym głównym celem jest identyfikacja obszarów, w których istnieje potencjał do poprawy.
+                            Dostarczamy spersonalizowane i innowacyjne rozwiązania, które generują mierzalny wzrost
+                            wydajności i jakości działalności.
+                        </p>
+                    </article>
+                    <article>
+                        <h2>Zaawansowana wiedza i konkurencyjność</h2>
+                        <p>
+                            Wykorzystując naszą zaawansowaną wiedzę branżową oraz dostosowane strategie, przekształcamy
+                            perspektywy naszych klientów, umożliwiając im osiągnięcie doskonałości i zwiększenie
+                            konkurencyjności na rynku.
+                        </p>
+                    </article>
+                </section>
+                <img src={backgroundImage} className="bg-image" alt="Tło" />
             </div>
         </Wrapper>
     );
