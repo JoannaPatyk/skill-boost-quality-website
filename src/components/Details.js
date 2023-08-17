@@ -15,6 +15,7 @@ function Details() {
                         <AiFillFacebook />
                     </a>
                 </div>
+
                 <div className="contact-data-container">
                     <div className="contact-data">
                         <HiOutlinePhone className="icon" />

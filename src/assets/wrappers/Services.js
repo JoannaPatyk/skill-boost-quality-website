@@ -55,6 +55,7 @@ const Wrapper = styled.div`
     }
 
     .service {
+        height: 65vh;
         display: flex;
         justify-content: center;
         flex-direction: column;
@@ -63,7 +64,6 @@ const Wrapper = styled.div`
         border-radius: 30px;
         box-shadow: 8px 8px 10px var(--grey-300);
         transition: 0.5s;
-        cursor: pointer;
     }
 
     .service:hover {

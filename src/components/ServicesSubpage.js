@@ -4,8 +4,16 @@ import Banner from './Banner';
 import Information from './Information';
 import dot from '../assets/img/geometric.png';
 import PropTypes from 'prop-types';
+import { useNavigate } from 'react-router';
 
-function Subpage({ title, description, icon }) {
+function ServicesSubpage({ title, description, icon }) {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/contact');
+        window.scrollTo(0, 0);
+    };
+
     return (
         <Wrapper>
             <div className="img-container"></div>
@@ -15,7 +23,9 @@ function Subpage({ title, description, icon }) {
                     <h2 className="subpage-title">{title}</h2>
                     <p className="subpage-description">{description}</p>
                     <h3>Skontaktuj się ze mną aby uzyskać szczegółowe informację odnośnie oferty.</h3>
-                    <button className="btn subpage-btn">kontakt</button>
+                    <button className="btn subpage-btn" onClick={handleClick}>
+                        kontakt
+                    </button>
                 </div>
                 <div className="subpage-icon">{icon}</div>
             </div>
@@ -25,10 +35,10 @@ function Subpage({ title, description, icon }) {
     );
 }
 
-Subpage.propTypes = {
+ServicesSubpage.propTypes = {
     title: PropTypes.string,
     description: PropTypes.string,
     icon: PropTypes.string
 };
 
-export default Subpage;
+export default ServicesSubpage;

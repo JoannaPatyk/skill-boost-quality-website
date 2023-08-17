@@ -19,7 +19,7 @@ const Wrapper = styled.div`
 
     h3 {
         font-weight: 300;
-        letter-spacing: 0.15rem;
+        letter-spacing: 1px;
         padding: 0.5rem;
         text-align: center;
     }
@@ -27,7 +27,7 @@ const Wrapper = styled.div`
     span {
         color: var(--primary-300);
         font-size: 1.3rem;
-        font-weight: 700;
+        font-weight: 600;
     }
 
     input,
@@ -44,6 +44,7 @@ const Wrapper = styled.div`
     textarea::placeholder {
         font-size: 1rem;
         font-family: var(--primary-fontFamily);
+        background-color: var(--width);
     }
 
     input:hover,

@@ -12,7 +12,7 @@
 :root {
     /* COLORS */
     --primary-100: #f28963;
-    --primary-200: #bf5a36;
+    --primary-200: #f35e3d;
     --primary-300: #f24c27;
 
     --secondary-100: #546467;
@@ -62,7 +62,6 @@ body {
 }
 
 .btn:hover {
-   
     background-color: var(--primary-300);
 }
 

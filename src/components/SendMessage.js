@@ -13,7 +13,7 @@ function SendMessage() {
                 <input type="email" placeholder="E-mail" />
                 <textarea placeholder="Treść wiadomości"></textarea>
                 <div className="agreement">
-                    <label className="form-control">
+                    <label className="form-control" htmlFor="checkbox">
                         <input type="checkbox" id="checkbox" name="checkbox" />
                         <p>
                             Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych

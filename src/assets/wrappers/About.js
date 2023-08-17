@@ -9,7 +9,7 @@ const Wrapper = styled.div`
         color: var(--black);
     }
 
-    .dot {
+    .backgroundImage {
         width: 80%;
         position: absolute;
         opacity: 0.05;
@@ -37,7 +37,7 @@ const Wrapper = styled.div`
         overflow: hidden;
     }
 
-    .men-img {
+    .portfolioImage {
         height: 110vh;
         z-index: 100;
     }

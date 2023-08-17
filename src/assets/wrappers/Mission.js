@@ -3,13 +3,15 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .mission-container {
         position: relative;
-        min-height: 60vh;
+        min-height: 70vh;
         width: 100%;
         color: var(--black);
         display: flex;
+        gap: 50px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        background-color: var(--width);
         overflow: hidden;
     }
 
@@ -37,14 +39,15 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+        letter-spacing: 1px;
     }
 
-    .mission-text p:nth-of-type(1) {
+    .mission-text article:nth-of-type(1) {
         padding-left: 2rem;
         border-left: 4px solid var(--secondary-100);
     }
-    .mission-text p:nth-of-type(2) {
+    .mission-text article:nth-of-type(2) {
         padding-right: 2rem;
         text-align: right;
         border-right: 4px solid var(--secondary-100);
