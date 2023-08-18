@@ -17,8 +17,8 @@ const Wrapper = styled.div`
 
     .form-container {
         position: absolute;
-        bottom: -5%;
-        right: 10%;
+        bottom: -2%;
+        right: 15%;
         z-index: 10;
         height: 100%;
         width: 35%;
@@ -28,6 +28,10 @@ const Wrapper = styled.div`
         border-radius: 30px;
         background-color: var(--grey-100);
         box-shadow: 5px 5px 8px var(--secondary-300);
+    }
+
+    .checkbox {
+        width: 80%;
     }
 `;
 

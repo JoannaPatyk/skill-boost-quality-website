@@ -1,4 +1,14 @@
 import styled from 'styled-components';
+const Position = {
+    washing: { top: '38%', left: '71%' },
+    training: { top: '23%', left: '45.2%' },
+    systems: { top: '39%', left: '17.5%' },
+    expertise: { top: '35%', left: '40%' },
+    optimization: { top: '55%', left: '22%' },
+    operations: { top: '60%', left: '51%' }
+};
+
+const transitionEffect = 'transition: opacity 0.5s, transform 0.5s;';
 
 const Wrapper = styled.div`
     .landing-container {
@@ -14,97 +24,117 @@ const Wrapper = styled.div`
         justify-content: center;
     }
 
-    img {
+    .landing-title {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 70%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+        height: 15vh;
+        background-color: #414d4492;
+    }
+
+    .landing-title h1 {
+        padding-right: 2rem;
+        width: 70%;
+        font-size: 2rem;
+        font-weight: 200;
+        letter-spacing: 2.5px;
+        line-height: 1.8;
+        text-align: right;
+        border-right: 2px solid var(--white);
+        text-shadow: 1px 1px 5px var(--secondary-300);
+    }
+
+    .factoryImage {
         width: 100%;
         height: 100%;
-        opacity: 0.9;
+        filter: blur(1.5px);
         object-fit: cover;
     }
 
-    h4 {
+    .dot h4 {
         position: absolute;
         padding: 0.5rem 1rem;
         text-transform: uppercase;
         color: var(--black);
         background-color: var(--white);
         border-radius: 25px;
-        border: 2px solid var(--black);
+        border: 1px solid var(--black);
+        box-shadow: 4px 4px 5px 5px var(--secondary-300);
     }
 
     .dot {
         position: absolute;
-        width: 2rem;
-        height: 2rem;
+        width: 1.8rem;
+        height: 1.8rem;
         border-radius: 50%;
         background-color: var(--white);
-        box-shadow: 0 0 20px 9px var(--primary-300);
+        box-shadow: 0 0 10px 5px var(--grey-300);
         cursor: pointer;
         transition: 0.5s;
-        animation: pulsating 1.6s linear infinite;
+        animation: pulsating 3s linear infinite;
     }
 
-    .dot:hover {
-        background-color: var(--secondary-300);
+    .washing-title,
+    .training-title,
+    .systems-title,
+    .expertise-title,
+    .optimization-title,
+    .operations-title {
+        width: 18vw;
+        display: none;
+        top: 19%;
+        left: 53%;
+        opacity: 0;
+        font-size: 1.5rem;
+        text-align: center;
+        font-weight: 300;
+        ${transitionEffect}
+        cursor: pointer;
+    }
+
+    .washing:hover .washing-title,
+    .training:hover .training-title,
+    .systems:hover .systems-title,
+    .expertise:hover .expertise-title,
+    .optimization:hover .optimization-title,
+    .operations:hover .operations-title {
+        display: block;
+        opacity: 1;
     }
 
     .washing {
-        top: 22%;
-        left: 51%;
-    }
-
-    .washing-title {
-        top: 23%;
-        left: 53%;
-        transition: 0.5s;
-        cursor: pointer;
+        top: ${Position.washing.top};
+        left: ${Position.washing.left};
     }
 
     .training {
-        top: 14%;
-        left: 75.2%;
-    }
-
-    .training-title {
-        top: 13%;
-        left: 68.4%;
-        transition: 0.5s;
-        cursor: pointer;
+        top: ${Position.training.top};
+        left: ${Position.training.left};
     }
 
     .systems {
-        top: 20.5%;
-        left: 15.8%;
-    }
-
-    .systems-title {
-        top: 21%;
-        left: 18%;
-        transition: 0.5s;
-        cursor: pointer;
+        top: ${Position.systems.top};
+        left: ${Position.systems.left};
     }
 
     .expertise {
-        top: 58%;
-        left: 40%;
+        top: ${Position.expertise.top};
+        left: ${Position.expertise.left};
     }
 
-    .expertise-title {
-        top: 55%;
-        left: 41.5%;
-        transition: 0.5s;
-        cursor: pointer;
+    .optimization {
+        top: ${Position.optimization.top};
+        left: ${Position.optimization.left};
     }
 
     .operations {
-        top: 70%;
-        left: 74%;
-    }
-
-    .operations-title {
-        top: 71%;
-        left: 76%;
-        transition: 0.5s;
-        cursor: pointer;
+        top: ${Position.operations.top};
+        left: ${Position.operations.left};
     }
 
     @keyframes pulsating {
@@ -112,7 +142,7 @@ const Wrapper = styled.div`
             transform: scale(1);
         }
         50% {
-            transform: scale(0.85);
+            transform: scale(0.9);
         }
         100% {
             transform: scale(1);

@@ -9,16 +9,17 @@ const Wrapper = styled.div`
         background-color: var(--secondary-300);
     }
 
-    h1 {
+    .menu-container h1 {
         text-align: center;
         line-height: 10vh;
+        letter-spacing: 1.5px;
+        color: var(--white);
     }
 
     .menu {
         position: relative;
         padding-right: 2rem;
         display: flex;
-        gap: 30px;
         align-items: center;
         justify-content: flex-end;
         text-transform: uppercase;
@@ -28,12 +29,13 @@ const Wrapper = styled.div`
         position: absolute;
         top: 50%;
         transform: translateY(-50%);
-        width: 130px;
+        width: 140px;
         padding: 0.5rem 1rem;
-        font-weight: 200;
+        font-weight: 600;
+        font-size: 1.1rem;
         text-align: center;
         letter-spacing: var(--letterSpacing);
-        border: 3px solid var(--primary-300);
+        border: 4px solid var(--primary-300);
         border-radius: 30px;
         transition: var(--transition);
         cursor: pointer;

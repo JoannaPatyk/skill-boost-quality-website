@@ -10,7 +10,7 @@ const Wrapper = styled.div`
     }
 
     .backgroundImage {
-        width: 80%;
+        width: 50%;
         position: absolute;
         opacity: 0.05;
         z-index: -100;
@@ -23,6 +23,10 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+
+    .background-img-container h1 {
+        font-weight: 300;
     }
 
     .img-container {
@@ -51,6 +55,13 @@ const Wrapper = styled.div`
     .arrow {
         margin-top: 1.8rem;
         font-size: 2.5rem;
+        animation: arrowDown 1.5s infinite;
+        cursor: pointer;
+    }
+
+    .arrowIcon-btn {
+        border: none;
+        background-color: transparent;
     }
 
     .about-description-container {
@@ -71,12 +82,10 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         flex-direction: column;
-    }
-
-    .about-description {
         line-height: 1.8;
         letter-spacing: 0.05rem;
         text-align: justify;
+        font-weight: 300;
     }
 `;
 

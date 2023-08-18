@@ -12,13 +12,11 @@ function SendMessage() {
                 <input type="text" placeholder="Imię" />
                 <input type="email" placeholder="E-mail" />
                 <textarea placeholder="Treść wiadomości"></textarea>
-                <div className="agreement">
-                    <label className="form-control" htmlFor="checkbox">
-                        <input type="checkbox" id="checkbox" name="checkbox" />
-                        <p>
-                            Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych
-                            osobowych w związku z realizacją zgłoszenia.
-                        </p>
+                <div className="checkbox">
+                    <input id="checkbox" type="checkbox" name="check" value="checkbox" />
+                    <label htmlFor="checkbox">
+                        Wyrażam zgodę na przetwarzanie moich danych osobowych zgodnie z ustawą o ochronie danych
+                        osobowych w związku z realizacją zgłoszenia.
                     </label>
                 </div>
                 <button className="btn" type="submit">

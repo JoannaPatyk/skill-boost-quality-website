@@ -13,6 +13,14 @@ import sections from '../utils/sectionsAbout';
 function About() {
     const arrowIcon = <HiArrowLongDown className="arrow" />;
 
+    const handleButtonUp = () => {
+        const threeQuarterWindowHeight = window.innerHeight * 0.75;
+        window.scrollTo({
+            top: threeQuarterWindowHeight,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <Wrapper>
             <div className="about-container">
@@ -20,8 +28,10 @@ function About() {
                     <div className="img-container">
                         <img src={portfolioImage} className="portfolioImage" alt="Zdjęcie profilowe" />
                     </div>
-                    <h2>POZNAJMY SIĘ!</h2>
-                    {arrowIcon}
+                    <h1>POZNAJMY SIĘ!</h1>
+                    <button className="arrowIcon-btn" onClick={handleButtonUp}>
+                        {arrowIcon}
+                    </button>
                     <img src={backgroundImage} className="backgroundImage" alt="Tło" />
                 </div>
                 <hr />

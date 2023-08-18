@@ -14,6 +14,7 @@ const Wrapper = styled.div`
         margin: 3rem auto 2rem auto;
         color: var(--black);
     }
+
     .services-title h2 {
         font-weight: 400;
     }
@@ -25,10 +26,10 @@ const Wrapper = styled.div`
     }
 
     .services-title h3 {
-        width: 60%;
+        width: 70%;
         color: var(--black);
         font-weight: 300;
-        margin-top: 2rem;
+        margin: 2rem 0;
         text-align: center;
         line-height: 1.6;
         text-transform: none;
@@ -89,6 +90,7 @@ const Wrapper = styled.div`
 
     .service p {
         line-height: 1.8;
+        font-weight: 400;
     }
 
     .service-btn {
