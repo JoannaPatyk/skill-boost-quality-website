@@ -25,6 +25,8 @@ const Wrapper = styled.div`
         font-size: 2rem;
         color: var(--white);
         text-decoration: none;
+        filter: drop-shadow(1px 1px var(--grey-100));
+        animation: button 1.5s infinite;
         transition: 0.5s;
         cursor: pointer;
     }
@@ -68,6 +70,9 @@ const Wrapper = styled.div`
 
     .icon {
         font-size: 1.3rem;
+        filter: drop-shadow(1px 1px var(--grey-100));
+
+        animation: button 1.5s infinite;
     }
 `;
 

@@ -9,13 +9,38 @@ const Wrapper = styled.div`
 
     .img-container {
         position: relative;
-        background-image: url('https://img.freepik.com/darmowe-zdjecie/futurystyczny-projekt-biura-z-nowoczesnym-sprzetem-technologicznym-generowanym-przez-ai_188544-22666.jpg?w=1380&t=st=1692180552~exp=1692181152~hmac=abfeb130716cf06494c6c335c8f27a3fc7cd04a57ff1502eef13fcfb44f167a8');
-        min-height: 60vh;
+        min-height: 45vh;
         background-attachment: fixed;
         background-position: bottom;
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 10;
+        filter: grayscale(90%) blur(1px);
+    }
+
+    .training {
+        background-image: url('https://img.freepik.com/darmowe-zdjecie/futurystyczny-projekt-biura-z-nowoczesnym-sprzetem-technologicznym-generowanym-przez-ai_188544-22666.jpg?w=1380&t=st=1692180552~exp=1692181152~hmac=abfeb130716cf06494c6c335c8f27a3fc7cd04a57ff1502eef13fcfb44f167a8');
+    }
+
+    .operations {
+        background-image: url('https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg');
+    }
+
+    .optimization {
+        background-image: url('https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg');
+    }
+
+    .expertise {
+        background-image: url('https://cdn.pixabay.com/photo/2015/09/28/17/10/signature-962388_1280.jpg');
+    }
+
+    .washing {
+        background-image: url('https://cdn.pixabay.com/photo/2016/11/23/00/39/chicken-1851495_1280.jpg');
+    }
+
+    .systems {
+        filter: grayscale(80%);
+        background-image: url('https://cdn.pixabay.com/photo/2015/07/06/17/05/industry-833517_1280.jpg');
     }
 
     .dot {
@@ -67,10 +92,15 @@ const Wrapper = styled.div`
     }
 
     .subpage-description {
-        margin: 1rem 4rem;
+        margin: 1.5rem 4rem;
         line-height: 2;
         letter-spacing: 0.05rem;
         text-align: justify;
+    }
+
+    .subpage-description p {
+        margin: 1rem 0;
+        font-weight: 400;
     }
 
     .subpage-btn {

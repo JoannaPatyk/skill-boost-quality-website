@@ -37,10 +37,11 @@ function Services() {
                     przedsiębiorstwa!
                 </h2>
                 <h3>
-                    Czy zastanawiałeś się kiedyś, jak zwiększyć wydajność i efektywność swojego firmy? Teraz masz szansę
-                    dowiedzieć się tego dzięki naszym profesjonalnym usługą! Jestem pasjonatem branży drobiarskiej,
-                    gotowym pomóc Ci w osiągnięciu optymalnych wyników...
+                    Czy zastanawiałeś się kiedyś, jak zwiększyć wydajność i efektywność swojej firmy? Teraz masz szansę
+                    dowiedzieć się tego dzięki naszym profesjonalnym usługą! Jesteśmy pasjonatami branży drobiarskiej,
+                    gotowymi pomóc Ci w osiągnięciu optymalnych wyników...
                 </h3>
+                <h2>Oferujemy usługi w zakresie:</h2>
             </div>
             <div className="services-description">{renderedServices}</div>
             <Banner />

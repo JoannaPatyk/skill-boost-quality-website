@@ -35,7 +35,7 @@ const services = [
     {
         id: 3,
         icon: <PiFactory className="service-icon" />,
-        title: 'Ekspertyza oceny zgodności',
+        title: 'Niezależna ekspertyza oceny zgodności',
         description:
             'Dokonujemy niezależnych ekspertyz oceny zgodności. Przeprowadza obiektywne oceny procesów, produktów i systemów w firmach spożywczych. Dzięki temu firmy mogą być pewne, że ich działania są zgodne z wymaganiami regulacyjnymi i standardami jakościowymi.',
         cls: 'expertise',

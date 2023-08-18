@@ -1,6 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
+import Wrapper from '../assets/wrappers/Information';
 import { MdKeyboardDoubleArrowRight } from 'react-icons/md';
 
 function ServiceLink({ to, title }) {
@@ -12,10 +13,12 @@ function ServiceLink({ to, title }) {
     };
 
     return (
-        <button id="service-link-menu" onClick={handleClick}>
-            <MdKeyboardDoubleArrowRight className="banner-icon" />
-            <p>{title}</p>
-        </button>
+        <Wrapper>
+            <button id="service-link-menu" onClick={handleClick}>
+                <MdKeyboardDoubleArrowRight className="banner-icon" />
+                <p>{title}</p>
+            </button>
+        </Wrapper>
     );
 }
 

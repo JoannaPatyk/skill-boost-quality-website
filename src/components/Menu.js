@@ -1,6 +1,6 @@
 import React, { useRef } from 'react';
 import Wrapper from '../assets/wrappers/Menu';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import links from '../utils/links';
 
 function Menu() {
@@ -14,7 +14,9 @@ function Menu() {
     return (
         <Wrapper>
             <div className="menu-container">
-                <h1>Skill Boost Quality</h1>
+                <Link to="/">
+                    <h1>Skill Boost Quality</h1>
+                </Link>
                 <nav className="menu" ref={menuRef}>
                     {links.map(({ id, text, path, cls }) => {
                         return (

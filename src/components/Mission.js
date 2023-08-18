@@ -1,15 +1,16 @@
 import React from 'react';
 import Wrapper from '../assets/wrappers/Mission';
 import backgroundImage from '../assets/img/geometric.png';
+import chickenImage from '../assets/img/chicken.png';
 
 function Mission() {
     return (
         <Wrapper>
             <div className="mission-container">
-                <h1>
-                    Naszą misją jest <span>wzmocnienie umiejętności i jakości</span> naszych Klientów.
-                </h1>
                 <section className="mission-text">
+                    <h1>
+                        Naszą misją jest <span>wzmocnienie umiejętności i jakości</span> naszych Klientów
+                    </h1>
                     <article>
                         <h2>Identyfikacja obszarów poprawy</h2>
                         <p>
@@ -27,7 +28,8 @@ function Mission() {
                         </p>
                     </article>
                 </section>
-                <img src={backgroundImage} className="bg-image" alt="Tło" />
+                <img src={chickenImage} className="chickenImage" alt="Kura" />
+                <img src={backgroundImage} className="backgroundImage" alt="Tło" />
             </div>
         </Wrapper>
     );

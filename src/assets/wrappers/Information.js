@@ -26,7 +26,7 @@ const Wrapper = styled.div`
 
     .mission,
     .services {
-        width: 40%;
+        width: 45%;
     }
 
     .data,
@@ -62,6 +62,7 @@ const Wrapper = styled.div`
     .services p {
         padding: 0 0.2rem;
         font-size: 0.8rem;
+        font-weight: 200;
         color: var(--white);
         letter-spacing: 1px;
         text-decoration: none;
