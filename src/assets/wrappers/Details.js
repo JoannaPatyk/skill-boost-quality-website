@@ -17,7 +17,7 @@ const Wrapper = styled.div`
         padding-left: 50px;
         padding-top: 10px;
         gap: 10px;
-        height: 5vh;
+        min-height: 5vh;
     }
 
     .social-icon {
@@ -106,6 +106,12 @@ const Wrapper = styled.div`
 
         .social-media {
             padding-left: 2px;
+        }
+    }
+
+    @media (orientation: landscape) {
+        .details-container {
+            height: 6vw;
         }
     }
 `;

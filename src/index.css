@@ -63,6 +63,7 @@ body {
 
 .btn:hover {
     background-color: var(--primary-300);
+    filter: drop-shadow(4px 4px var(--primary-100));
 }
 
 .arrow {

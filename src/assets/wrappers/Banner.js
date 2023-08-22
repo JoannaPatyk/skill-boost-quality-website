@@ -86,6 +86,12 @@ const Wrapper = styled.div`
             font-size: 1.3rem;
         }
     }
+
+    @media (orientation: landscape) {
+        .banner-container {
+            min-height: 18vw;
+        }
+    }
 `;
 
 export default Wrapper;

@@ -95,10 +95,6 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 850px) {
-        /* .mission-container {
-            min-height: 90vh;
-        } */
-
         .mission-text {
             width: 80%;
             gap: 40px;
@@ -136,6 +132,12 @@ const Wrapper = styled.div`
 
         .mission-text p {
             font-size: 0.9rem;
+        }
+    }
+
+    @media (orientation: landscape) {
+        .mission-container {
+            min-height: 100vw;
         }
     }
 `;

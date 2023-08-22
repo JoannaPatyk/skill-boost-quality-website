@@ -273,6 +273,12 @@ const Wrapper = styled.div`
             font-size: 0.5rem;
         }
     }
+
+    @media (max-width: 570px) {
+        .dot h4 {
+            font-size: 0.7rem;
+        }
+    }
 `;
 
 export default Wrapper;

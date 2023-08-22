@@ -78,6 +78,12 @@ const Wrapper = styled.div`
             min-width: 320px;
         }
     }
+
+    @media (orientation: landscape) {
+        .contact-form-container {
+            min-height: 70vw;
+        }
+    }
 `;
 
 export default Wrapper;

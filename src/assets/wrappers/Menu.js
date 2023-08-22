@@ -163,6 +163,16 @@ const Wrapper = styled.div`
             font-size: 1.8rem;
         }
     }
+
+    @media (orientation: landscape) {
+        .menu-container {
+            height: 10vw;
+        }
+
+        .menu-container h1 {
+            line-height: 10vw;
+        }
+    }
 `;
 
 export default Wrapper;

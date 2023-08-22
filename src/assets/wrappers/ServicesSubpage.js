@@ -194,6 +194,12 @@ const Wrapper = styled.div`
             min-height: 130vh;
         }
     }
+
+    @media (orientation: landscape) {
+        .subpage-container {
+            min-height: 90vw;
+        }
+    }
 `;
 
 export default Wrapper;

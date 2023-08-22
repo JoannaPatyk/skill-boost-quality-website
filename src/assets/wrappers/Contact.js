@@ -61,6 +61,12 @@ const Wrapper = styled.div`
             width: 90%;
         }
     }
+
+    @media (orientation: landscape) {
+        .contact-container {
+            min-height: 70vw;
+        }
+    }
 `;
 
 export default Wrapper;

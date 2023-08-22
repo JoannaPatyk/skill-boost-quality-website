@@ -31,6 +31,12 @@ const Wrapper = styled.div`
             display: none;
         }
     }
+
+    @media (orientation: landscape) {
+        .footer-container {
+            height: 6vw;
+        }
+    }
 `;
 
 export default Wrapper;
