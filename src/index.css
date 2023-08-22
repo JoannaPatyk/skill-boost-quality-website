@@ -55,6 +55,7 @@ body {
     border-radius: 25px;
     color: var(--white);
     background-color: var(--primary-100);
+    filter: drop-shadow(4px 4px var(--primary-300));
     animation: button 2s infinite;
     transition: 0.5s;
     cursor: pointer;

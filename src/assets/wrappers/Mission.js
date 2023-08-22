@@ -6,7 +6,7 @@ const Wrapper = styled.div`
         width: 100%;
         color: var(--black);
         display: flex;
-        gap: 60px;
+        gap: 100px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -59,6 +59,7 @@ const Wrapper = styled.div`
         margin-bottom: 1rem;
         font-weight: 600;
         text-transform: uppercase;
+        filter: drop-shadow(1px 1px var(--secondary-200));
     }
 
     .mission-text p {
@@ -94,9 +95,9 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 850px) {
-        .chickenImage {
-            width: 38%;
-        }
+        /* .mission-container {
+            min-height: 90vh;
+        } */
 
         .mission-text {
             width: 80%;
