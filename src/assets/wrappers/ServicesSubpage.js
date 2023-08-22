@@ -95,8 +95,8 @@ const Wrapper = styled.div`
     .subpage-description {
         margin: 1.5rem 4rem;
         line-height: 2;
-        letter-spacing: 0.05rem;
-        text-align: justify;
+        letter-spacing: 1px;
+        /* text-align: justify; */
     }
 
     .subpage-description p {
@@ -161,6 +161,7 @@ const Wrapper = styled.div`
     @media (max-width: 605px) {
         .subpage-title {
             font-size: 1.2rem;
+            margin: 0 2rem;
             text-align: center;
         }
 

@@ -5,7 +5,7 @@ const Wrapper = styled.div`
         position: relative;
         display: grid;
         grid-template-rows: 0.5fr 3fr;
-        background-color: var(--secondary-200);
+        background-color: var(--secondary-300);
         box-shadow: 1px 1px 20px 5px var(--secondary-300);
     }
 
@@ -26,7 +26,7 @@ const Wrapper = styled.div`
         display: grid;
         grid-template-columns: 2fr 2fr;
         place-items: center;
-        gap: 50px;
+        gap: 40px;
         justify-content: center;
         align-items: center;
     }
@@ -36,7 +36,7 @@ const Wrapper = styled.div`
         width: 100%;
         padding: 1rem;
         display: grid;
-        gap: 30px;
+        gap: 35px;
         grid-template-rows: 0.5fr 3fr;
         box-shadow: 2px 2px 5px 3px var(--black);
         border-radius: 30px;
@@ -73,10 +73,10 @@ const Wrapper = styled.div`
     }
 
     .value p {
-        width: 90%;
+        width: 95%;
         line-height: 1.8;
         letter-spacing: 1px;
-        font-weight: 300;
+        font-weight: 400;
         text-align: justify;
     }
 

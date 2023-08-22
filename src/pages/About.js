@@ -38,9 +38,9 @@ function About() {
                 <div className="about-description-container">
                     <section className="about-description">
                         {sections.map(({ content, id }) => (
-                            <>
-                                <p key={id}>{content}</p>
-                            </>
+                            <div key={id}>
+                                <p>{content}</p>
+                            </div>
                         ))}
                     </section>
                 </div>

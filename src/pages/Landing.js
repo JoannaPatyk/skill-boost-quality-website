@@ -7,6 +7,7 @@ import Mission from '../components/Mission';
 import Banner from '../components/Banner';
 import Information from '../components/Information';
 import ContactForm from '../components/ContactForm';
+import ContactBanner from '../components/ContactBanner';
 import SlideInAnimation from '../components/SlideInAnimation';
 
 import servicesTitles from '../utils/servicesTitles';
@@ -38,10 +39,11 @@ function Landing() {
                         );
                     })}
                 </div>
-                <Values />
-                <Mission />
-                <ContactForm />
                 <Banner />
+                <Mission />
+                <Values />
+                <ContactForm />
+                <ContactBanner />
                 <Information />
             </div>
         </Wrapper>

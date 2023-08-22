@@ -92,11 +92,11 @@ const Wrapper = styled.div`
         }
 
         .menu-container {
+            position: relative;
             grid-template-columns: 2fr 1fr;
         }
 
         .menu-box {
-            position: relative;
             display: flex;
             justify-content: end;
             align-items: center;
@@ -106,35 +106,36 @@ const Wrapper = styled.div`
             cursor: pointer;
         }
 
-        .menu-box:hover .small-menu {
-            display: block;
-            opacity: 1;
-        }
-
-        .menu-box:hover .menu-icon {
-            display: none;
-            opacity: 0;
-        }
-
         .small-menu {
+            width: 100vw;
             position: absolute;
-            top: 9vh;
-            right: 0;
-            z-index: 1000;
-            width: 300px;
-            display: none;
-            opacity: 0;
+            top: 100%;
+            left: 0;
+            z-index: 100;
             text-transform: uppercase;
-            border-radius: 30px;
-            transition: opacity 0.3s ease-in-out;
             background-color: var(--secondary-300);
         }
 
         .small-menu .menu-element {
-            margin: 15px;
+            width: 100vw;
+            margin: 0;
+            padding: 10px 0;
+            border: none;
+            border-radius: 0;
+            color: var(--white);
+            opacity: 0.4;
+            font-size: 1.2rem;
+            font-weight: 200;
         }
 
-        .menu-box:hover .small-menu {
+        .small-menu .menu-element:hover {
+            color: var(--primary-300);
+            font-weight: 700;
+            opacity: 1;
+            background-color: transparent;
+        }
+
+        .show {
             display: block;
             opacity: 1;
         }
@@ -153,14 +154,11 @@ const Wrapper = styled.div`
 
         .menu-icon {
             font-size: 2rem;
+            filter: drop-shadow(1px 1px var(--grey-100));
         }
     }
 
     @media (max-width: 385px) {
-        .menu-container h1 {
-            font-size: 1.3rem;
-        }
-
         .menu-icon {
             font-size: 1.8rem;
         }

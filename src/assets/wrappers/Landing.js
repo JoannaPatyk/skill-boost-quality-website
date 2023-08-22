@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 const Position = {
-    washing: { top: '38%', left: '71%' },
-    training: { top: '23%', left: '45.2%' },
+    washing: { top: '48%', left: '78%' },
+    training: { top: '23%', left: '58.2%' },
     systems: { top: '39%', left: '14.5%' },
-    expertise: { top: '35%', left: '40%' },
+    expertise: { top: '23%', left: '35%' },
     optimization: { top: '58%', left: '26%' },
-    operations: { top: '60%', left: '51%' }
+    operations: { top: '54%', left: '51%' }
 };
 
 const transitionEffect = 'transition: opacity 0.5s, transform 0.5s;';
@@ -53,7 +53,6 @@ const Wrapper = styled.div`
     .factoryImage {
         width: 100%;
         height: 100%;
-        filter: blur(1.5px);
         object-fit: cover;
     }
 
@@ -210,37 +209,68 @@ const Wrapper = styled.div`
 
     @media (max-width: 985px) {
         .landing-title {
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+            height: 10vh;
         }
 
         .landing-title h1 {
             border: none;
             text-align: center;
+            font-size: 1rem;
             padding: 0;
+        }
+    }
+
+    @media (max-width: 805px) {
+        .landing-title {
+            display: none;
+        }
+
+        .washing-title,
+        .training-title,
+        .systems-title,
+        .expertise-title,
+        .optimization-title,
+        .operations-title {
+            display: block;
+            opacity: 1;
         }
 
         .dot {
-            display: none;
+            width: 10px;
+            height: 10px;
+            animation-duration: 6s;
         }
-    }
 
-    @media (max-width: 985px) {
-        .landing-title h1 {
-            width: 90%;
-        }
-    }
-
-    @media (max-width: 785px) {
-        .landing-title h1 {
-            font-size: 1.1rem;
-        }
-    }
-
-    @media (max-width: 405px) {
-        .landing-title h1 {
+        .dot h4 {
+            width: 28vw;
+            top: 50%;
+            right: 50%;
+            transform: translate(-50%, 0);
             font-size: 0.9rem;
+            letter-spacing: 0;
+            text-transform: none;
+            color: var(--white);
+            background-color: transparent;
+            filter: drop-shadow(1px 1px var(--black));
+            box-shadow: none;
+        }
+    }
+
+    @media (max-width: 570px) {
+        .dot h4 {
+            font-size: 0.7rem;
+        }
+    }
+
+    @media (max-width: 530px) {
+        .dot h4 {
+            font-size: 0.6rem;
+        }
+    }
+
+    @media (max-width: 430px) {
+        .dot h4 {
+            font-size: 0.5rem;
         }
     }
 `;

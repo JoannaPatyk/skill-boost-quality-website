@@ -18,6 +18,7 @@ const Wrapper = styled.div`
         justify-content: center;
         text-decoration: none;
         color: var(--white);
+        filter: drop-shadow(1px 1px var(--black));
     }
 
     .banner-container h1 {

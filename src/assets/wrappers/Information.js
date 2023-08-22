@@ -165,22 +165,17 @@ const Wrapper = styled.div`
         }
     }
 
+    @media (max-width: 690px) {
+        .mission {
+            grid-template-rows: 0.7fr 2fr;
+        }
+    }
+
     @media (max-width: 590px) {
         .mission,
         .services,
         .data {
             width: 95%;
-        }
-    }
-
-    @media (max-width: 470px) {
-        .mission {
-            display: none;
-        }
-
-        .data p,
-        .services p {
-            font-size: 0.7rem;
         }
     }
 `;

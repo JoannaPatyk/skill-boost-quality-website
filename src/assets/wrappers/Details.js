@@ -15,6 +15,7 @@ const Wrapper = styled.div`
         display: flex;
         align-items: center;
         padding-left: 50px;
+        padding-top: 10px;
         gap: 10px;
         height: 5vh;
     }
@@ -103,9 +104,8 @@ const Wrapper = styled.div`
             gap: 5px;
         }
 
-        .icon,
-        .social-icon {
-            display: none;
+        .social-media {
+            padding-left: 2px;
         }
     }
 `;

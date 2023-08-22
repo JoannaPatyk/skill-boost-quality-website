@@ -10,11 +10,10 @@ const contentTraining = {
             wkład w rozwój kapitału ludzkiego w branży spożywczej.
         </p>,
         <p key={1}>
-            W miarę upływu czasu przemysł staje się coraz bardziej złożony i regulowany, odpowiednio przeszkolona kadra
-            pracownicza jest niezbędna dla efektywnej i zgodnej z przepisami pracy. Podnoszenie kwalifikacji pracowników
-            ma bezpośredni wpływ na jakość produkcji. Dobrze przeszkolony personel jest bardziej świadomy procesów i
-            zagrożeń, co przekłada się na lepsze wykrywanie i zapobieganie problemom. W rezultacie, produkty wychodzące
-            z linii produkcyjnej są bardziej spójne, bezpieczne i zgodne z normami jakościowymi.
+            W miarę upływu czasu przemysł staje się coraz bardziej złożony. Odpowiednio przeszkolona kadra pracownicza
+            jest niezbędna dla zgodnej z przepisami pracy. Podnoszenie kwalifikacji pracowników ma bezpośredni wpływ na
+            jakość produkcji. Dobrze przeszkolony personel jest bardziej świadomy procesów i zagrożeń. W rezultacie,
+            produkty wychodzące z linii produkcyjnej są bardziej spójne, bezpieczne i zgodne z normami jakościowymi.
         </p>
     ],
     cls: 'training'
