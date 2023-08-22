@@ -3,12 +3,11 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
+        "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
         "@testing-library/jest-dom": "^5.17.0",
         "@testing-library/react": "^13.4.0",
         "@testing-library/user-event": "^13.5.0",
-        "eslint": "^8.46.0",
         "framer-motion": "^10.16.0",
-        "prettier": "^3.0.1",
         "prop-types": "^15.8.1",
         "react": "^18.2.0",
         "react-dom": "^18.2.0",
@@ -27,7 +26,8 @@
         "eslint-check": "npx eslint .",
         "eslint-fix": "npx eslint --fix .",
         "prettier-check": "npx prettier --check .",
-        "prettier-fix": "npx prettier --write ."
+        "prettier-fix": "npx prettier --write .",
+        "serve": "npx serve"
     },
     "eslintConfig": {
         "extends": [
@@ -46,5 +46,10 @@
             "last 1 firefox version",
             "last 1 safari version"
         ]
+    },
+    "devDependencies": {
+        "eslint": "^8.47.0",
+        "prettier": "^3.0.2",
+        "serve": "^14.2.1"
     }
 }
