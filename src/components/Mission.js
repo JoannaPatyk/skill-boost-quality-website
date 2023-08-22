@@ -8,9 +8,12 @@ function Mission() {
         <Wrapper>
             <div className="mission-container">
                 <section className="mission-text">
-                    <h1>
-                        Naszą misją jest <span>wzmocnienie umiejętności i jakości</span> naszych Klientów
-                    </h1>
+                    <div className="mission-title">
+                        <img src={chickenImage} className="chickenImage" alt="Kura" />
+                        <h1>
+                            Naszą misją jest <span>wzmocnienie umiejętności i jakości</span> naszych Klientów
+                        </h1>
+                    </div>
                     <article>
                         <h2>Identyfikacja obszarów poprawy</h2>
                         <p>
@@ -28,7 +31,6 @@ function Mission() {
                         </p>
                     </article>
                 </section>
-                <img src={chickenImage} className="chickenImage" alt="Kura" />
                 <img src={backgroundImage} className="backgroundImage" alt="Tło" />
             </div>
         </Wrapper>

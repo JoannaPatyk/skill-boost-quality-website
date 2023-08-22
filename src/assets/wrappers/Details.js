@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .details-container {
-        height: 5vh;
+        height: 6vh;
         width: 100%;
         padding-right: 30px;
         display: grid;
@@ -70,9 +70,43 @@ const Wrapper = styled.div`
 
     .icon {
         font-size: 1.3rem;
-        filter: drop-shadow(1px 1px var(--grey-100));
-
         animation: button 1.5s infinite;
+    }
+
+    @media (max-width: 1100px) {
+        .social-icon {
+            font-size: 1.8rem;
+        }
+
+        .contact-data p {
+            font-size: 0.8rem;
+        }
+
+        .icon {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 680px) {
+        .details-container {
+            padding: 0 10px;
+        }
+
+        .contact-data-container {
+            gap: 1px;
+            flex-direction: column;
+            align-items: flex-end;
+            justify-content: center;
+        }
+
+        .contact-data {
+            gap: 5px;
+        }
+
+        .icon,
+        .social-icon {
+            display: none;
+        }
     }
 `;
 

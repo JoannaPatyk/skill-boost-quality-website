@@ -71,7 +71,7 @@ const Wrapper = styled.div`
 
     label {
         position: relative;
-        padding: 1rem 3rem;
+        padding: 1rem 0 1rem 3.5rem;
         font-size: 0.8rem;
         font-weight: 300;
         cursor: pointer;
@@ -101,17 +101,108 @@ const Wrapper = styled.div`
     }
 
     input[type='checkbox']:checked + label:before {
-        content: '✅';
+        content: 'X';
         text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
         font-size: 20px;
+        font-weight: 600;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: var(--primary-300);
+        color: var(--primary-100);
     }
 
     .btn {
         width: 30%;
+    }
+
+    @media (max-width: 1450px) {
+        input,
+        textarea {
+            width: 30vw;
+        }
+    }
+
+    @media (max-width: 1080px) {
+        input,
+        textarea {
+            width: 38vw;
+        }
+
+        .contact-form h1 {
+            font-size: 1.8rem;
+        }
+
+        .contact-form h3 {
+            font-size: 1.1rem;
+        }
+
+        .contact-form span {
+            font-size: 1.2rem;
+        }
+    }
+
+    @media (max-width: 890px) {
+        input,
+        textarea {
+            width: 42vw;
+        }
+    }
+
+    @media (max-width: 790px) {
+        input,
+        textarea {
+            width: 52vw;
+        }
+
+        .contact-form h1 {
+            font-size: 1.5rem;
+        }
+
+        .contact-form h3 {
+            font-size: 1rem;
+            padding: 0;
+        }
+
+        .contact-form span {
+            font-size: 1.1rem;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 490px) {
+        input,
+        textarea {
+            width: 60vw;
+        }
+
+        .contact-form h1 {
+            font-size: 1.3rem;
+        }
+
+        .contact-form h3 {
+            font-size: 0.8rem;
+        }
+
+        .contact-form span {
+            font-size: 0.9rem;
+        }
+
+        label {
+            font-size: 0.7rem;
+        }
+
+        input::placeholder,
+        textarea::placeholder {
+            font-size: 0.8rem;
+        }
+
+        .btn {
+            width: 40%;
+        }
     }
 `;
 

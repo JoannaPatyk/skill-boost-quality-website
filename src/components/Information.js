@@ -35,23 +35,14 @@ function Information() {
 
                     <div className="data">
                         <div className="element-title">
-                            <h2>Dane</h2>
-                        </div>
-                        <div className="element-text">
-                            <span>Skill Boost Quality</span>
-                            <p>NIP: 0000000000</p>
-                            <p>REGON: 0000000000</p>
-                        </div>
-                    </div>
-
-                    <div className="address">
-                        <div className="element-title">
                             <h2>Adres</h2>
                         </div>
                         <div className="element-text">
                             <span>Skill Boost Quality</span>
                             <p>ul. Mickiewicza 10/45</p>
                             <p>31-234 Kraków</p>
+                            <p>NIP: 0000000000</p>
+                            <p>REGON: 0000000000</p>
                         </div>
                     </div>
                 </div>

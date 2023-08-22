@@ -19,6 +19,18 @@ const Wrapper = styled.div`
         font-weight: 500;
         color: var(--primary-100);
     }
+
+    @media (max-width: 670px) {
+        p {
+            font-size: 0.7rem;
+        }
+    }
+
+    @media (max-width: 480px) {
+        span {
+            display: none;
+        }
+    }
 `;
 
 export default Wrapper;
