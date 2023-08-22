@@ -24,6 +24,12 @@ const Wrapper = styled.div`
         color: var(--primary-100);
     }
 
+    .menu-icon {
+        background-color: transparent;
+        border: none;
+        color: var(--width);
+    }
+
     .menu {
         position: relative;
         padding-right: 2rem;
@@ -119,13 +125,12 @@ const Wrapper = styled.div`
         .small-menu .menu-element {
             width: 100vw;
             margin: 0;
-            padding: 10px 0;
+            padding: 20px 0;
             border: none;
             border-radius: 0;
             color: var(--white);
-            opacity: 0.4;
             font-size: 1.2rem;
-            font-weight: 200;
+            font-weight: 300;
         }
 
         .small-menu .menu-element:hover {
@@ -161,6 +166,16 @@ const Wrapper = styled.div`
     @media (max-width: 385px) {
         .menu-icon {
             font-size: 1.8rem;
+        }
+    }
+
+    @media (orientation: landscape) and (max-width: 1200px) and (max-height: 700px) {
+        .menu-container {
+            height: 10vw;
+        }
+
+        .menu-container h1 {
+            line-height: 10vw;
         }
     }
 `;

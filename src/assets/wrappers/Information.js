@@ -20,7 +20,8 @@ const Wrapper = styled.div`
     .elements span {
         font-weight: 600;
         font-size: 0.85rem;
-        color: var(--primary-100);
+        color: var(--primary-300);
+        filter: drop-shadow(1px 1px var(--grey-100));
     }
 
     .mission,
@@ -34,7 +35,6 @@ const Wrapper = styled.div`
     }
 
     .mission,
-    .data,
     .address,
     .services {
         display: grid;
@@ -43,7 +43,6 @@ const Wrapper = styled.div`
     }
 
     .mission h2,
-    .data h2,
     .address h2,
     .services h2 {
         padding: 1rem 0;
@@ -52,10 +51,10 @@ const Wrapper = styled.div`
         color: var(--primary-300);
         text-transform: uppercase;
         text-align: left;
+        filter: drop-shadow(0px 1px var(--grey-100));
     }
 
     .mission p,
-    .data p,
     .address p,
     .services p {
         padding: 0 0.2rem;
@@ -102,7 +101,6 @@ const Wrapper = styled.div`
         }
 
         .mission p,
-        .data p,
         .address p,
         .services p {
             width: 100%;
@@ -119,7 +117,6 @@ const Wrapper = styled.div`
         }
 
         .mission h2,
-        .data h2,
         .address h2,
         .services h2 {
             padding: 0.5rem 0;
@@ -127,7 +124,6 @@ const Wrapper = styled.div`
         }
 
         .mission p,
-        .data p,
         .address p,
         .services p {
             font-size: 0.75rem;
@@ -152,7 +148,7 @@ const Wrapper = styled.div`
 
         .mission,
         .services,
-        .data {
+        .address {
             width: 70%;
         }
     }
@@ -160,7 +156,7 @@ const Wrapper = styled.div`
     @media (max-width: 780px) {
         .mission,
         .services,
-        .data {
+        .address {
             width: 80%;
         }
     }
@@ -174,7 +170,7 @@ const Wrapper = styled.div`
     @media (max-width: 590px) {
         .mission,
         .services,
-        .data {
+        .address {
             width: 95%;
         }
     }

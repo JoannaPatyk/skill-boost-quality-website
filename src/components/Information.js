@@ -33,7 +33,7 @@ function Information() {
                         </div>
                     </div>
 
-                    <div className="data">
+                    <div className="address">
                         <div className="element-title">
                             <h2>Adres</h2>
                         </div>

@@ -3,6 +3,7 @@ import Wrapper from '../assets/wrappers/Menu';
 import { Link, useNavigate } from 'react-router-dom';
 import links from '../utils/links';
 import { HiOutlineMenuAlt3 } from 'react-icons/hi';
+import { IoArrowRedoOutline } from 'react-icons/io5';
 
 function Menu() {
     const [isOpen, setIsOpen] = useState(false);
@@ -54,7 +55,9 @@ function Menu() {
                     {displayMenu}
                 </nav>
                 <div className="menu-box">
-                    <HiOutlineMenuAlt3 className="menu-icon" onClick={handleToggle} />
+                    <button className="menu-icon" onClick={handleToggle}>
+                        {isOpen ? <IoArrowRedoOutline /> : <HiOutlineMenuAlt3 />}
+                    </button>
                     <div className={`${isOpen ? 'small-menu show' : 'small-menu'}`}>{displayMenu}</div>
                 </div>
             </div>

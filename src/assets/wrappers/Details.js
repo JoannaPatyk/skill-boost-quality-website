@@ -14,10 +14,9 @@ const Wrapper = styled.div`
     .social-media {
         display: flex;
         align-items: center;
-        padding-left: 50px;
-        padding-top: 10px;
+        padding-left: 20px;
         gap: 10px;
-        height: 5vh;
+        min-height: 6vh;
     }
 
     .social-icon {
@@ -91,6 +90,7 @@ const Wrapper = styled.div`
     @media (max-width: 680px) {
         .details-container {
             padding: 0 10px;
+            height: 8vh;
         }
 
         .contact-data-container {
@@ -106,6 +106,12 @@ const Wrapper = styled.div`
 
         .social-media {
             padding-left: 2px;
+        }
+    }
+
+    @media (orientation: landscape) and (max-width: 1200px) and (max-height: 700px) {
+        .details-container {
+            height: 6vw;
         }
     }
 `;

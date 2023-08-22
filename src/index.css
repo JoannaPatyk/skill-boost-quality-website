@@ -11,6 +11,7 @@
 
 :root {
     /* COLORS */
+
     --primary-100: #f28963;
     --primary-200: #f35e3d;
     --primary-300: #f24c27;
@@ -18,6 +19,39 @@
     --secondary-100: #63776f;
     --secondary-200: #23373c;
     --secondary-300: #0b2126;
+
+    /* 
+    --primary-100: #BFAF7E;
+    --primary-200: #BF8B2A;
+    --primary-300: #BF9A2A;
+
+    --secondary-100: #63776f;
+    --secondary-200: #2F401E;
+    --secondary-300: #1F2614; */
+
+    /* --primary-100: #B6B4BF;
+    --primary-200: #5e7575;
+    --primary-300: #465959;
+
+    --secondary-100: #648569;
+    --secondary-200: #36593B;
+    --secondary-300: #244028; */
+
+    /* --primary-100: #b63f3f;
+    --primary-200: #ad2727;
+    --primary-300: #a40f0f;
+
+    --secondary-100: #63776f;
+    --secondary-200: #23373c;
+    --secondary-300: #0b2126; */
+
+    /* --primary-100: #f28963;
+    --primary-200: #f35e3d;
+    --primary-300: #f24c27;
+
+    --secondary-100: #5e5e5e;
+    --secondary-200: #3f3f3f;
+    --secondary-300: #222222; */
 
     --grey-100: #eceded;
     --grey-200: #c2c5c4;
@@ -63,6 +97,7 @@ body {
 
 .btn:hover {
     background-color: var(--primary-300);
+    filter: drop-shadow(4px 4px var(--primary-100));
 }
 
 .arrow {

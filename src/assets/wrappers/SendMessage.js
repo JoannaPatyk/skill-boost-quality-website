@@ -18,7 +18,7 @@ const Wrapper = styled.div`
 
     .contact-form h3 {
         font-weight: 300;
-        letter-spacing: 1px;
+        letter-spacing: 0.5px;
         padding: 0.5rem;
         text-align: center;
     }
@@ -27,6 +27,7 @@ const Wrapper = styled.div`
         color: var(--primary-300);
         font-size: 1.3rem;
         font-weight: 600;
+        filter: drop-shadow(1px 1px var(--primary-100));
     }
 
     input,

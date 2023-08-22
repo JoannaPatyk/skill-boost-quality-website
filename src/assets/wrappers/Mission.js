@@ -70,6 +70,7 @@ const Wrapper = styled.div`
         padding-left: 2rem;
         border-left: 4px solid var(--secondary-100);
     }
+
     .mission-text article:nth-of-type(2) {
         padding-right: 2rem;
         text-align: right;
@@ -95,10 +96,6 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 850px) {
-        /* .mission-container {
-            min-height: 90vh;
-        } */
-
         .mission-text {
             width: 80%;
             gap: 40px;
@@ -136,6 +133,12 @@ const Wrapper = styled.div`
 
         .mission-text p {
             font-size: 0.9rem;
+        }
+    }
+
+    @media (orientation: landscape) and (max-width: 1200px) and (max-height: 700px) {
+        .mission-container {
+            min-height: 100vw;
         }
     }
 `;

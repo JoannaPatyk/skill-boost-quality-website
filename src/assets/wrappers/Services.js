@@ -215,6 +215,12 @@ const Wrapper = styled.div`
             font-size: 0.9rem;
         }
     }
+
+    @media (orientation: landscape) and (max-width: 1200px) and (max-height: 700px) {
+        .service {
+            min-height: 45vw;
+        }
+    }
 `;
 
 export default Wrapper;

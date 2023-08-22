@@ -61,6 +61,12 @@ const Wrapper = styled.div`
             width: 90%;
         }
     }
+
+    @media (orientation: landscape) and (max-width: 1200px) and (max-height: 700px) {
+        .contact-container {
+            min-height: 70vw;
+        }
+    }
 `;
 
 export default Wrapper;
