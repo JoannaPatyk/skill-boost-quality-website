@@ -33,6 +33,51 @@ const Wrapper = styled.div`
     .checkbox {
         width: 80%;
     }
+
+    @media (max-width: 1500px) {
+        .form-container {
+            width: 40%;
+        }
+    }
+
+    @media (max-width: 1250px) {
+        .form-container {
+            width: 50%;
+        }
+    }
+
+    @media (max-width: 1050px) {
+        .form-container {
+            top: 52%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            min-width: 550px;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .form-container {
+            min-width: 450px;
+        }
+    }
+
+    @media (max-width: 580px) {
+        .form-container {
+            min-width: 400px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .form-container {
+            min-width: 350px;
+        }
+    }
+
+    @media (max-width: 400px) {
+        .form-container {
+            min-width: 320px;
+        }
+    }
 `;
 
 export default Wrapper;

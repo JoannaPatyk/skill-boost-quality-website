@@ -2,9 +2,9 @@ import styled from 'styled-components';
 const Position = {
     washing: { top: '38%', left: '71%' },
     training: { top: '23%', left: '45.2%' },
-    systems: { top: '39%', left: '17.5%' },
+    systems: { top: '39%', left: '14.5%' },
     expertise: { top: '35%', left: '40%' },
-    optimization: { top: '55%', left: '22%' },
+    optimization: { top: '58%', left: '26%' },
     operations: { top: '60%', left: '51%' }
 };
 
@@ -40,12 +40,12 @@ const Wrapper = styled.div`
     .landing-title h1 {
         padding-right: 2rem;
         width: 60%;
-        font-size: 2rem;
+        font-size: 1.8rem;
+        font-weight: 500;
         letter-spacing: 2px;
         line-height: 1.5;
         text-align: right;
         color: var(--white);
-        text-transform: uppercase;
         border-right: 6px solid var(--white);
         text-shadow: 1px 1px 5px var(--secondary-300);
     }
@@ -154,6 +154,93 @@ const Wrapper = styled.div`
         }
         100% {
             transform: scale(1);
+        }
+    }
+
+    @media (max-width: 1700px) {
+        .landing-title h1 {
+            font-size: 1.5rem;
+        }
+
+        .dot {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+
+    @media (max-width: 1350px) {
+        .landing-title {
+            height: 12vh;
+        }
+
+        .landing-title h1 {
+            font-size: 1.4rem;
+        }
+
+        .dot {
+            width: 1.2rem;
+            height: 1.2rem;
+        }
+
+        .dot h4 {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 1180px) {
+        .dot h4 {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 985px) {
+        .landing-title {
+            height: 13vh;
+        }
+
+        .landing-title h1 {
+            width: 80%;
+        }
+
+        .dot {
+            width: 1rem;
+            height: 1rem;
+        }
+    }
+
+    @media (max-width: 985px) {
+        .landing-title {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .landing-title h1 {
+            border: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        .dot {
+            display: none;
+        }
+    }
+
+    @media (max-width: 985px) {
+        .landing-title h1 {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 785px) {
+        .landing-title h1 {
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 405px) {
+        .landing-title h1 {
+            font-size: 0.9rem;
         }
     }
 `;

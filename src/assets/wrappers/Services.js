@@ -11,12 +11,14 @@ const Wrapper = styled.div`
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        margin: 3rem auto 2rem auto;
+        margin: 3rem auto 0 auto;
         color: var(--black);
     }
 
     .services-title h2 {
+        width: 60%;
         font-weight: 400;
+        text-align: center;
     }
 
     .services-title span {
@@ -47,23 +49,23 @@ const Wrapper = styled.div`
     }
 
     .services-description {
-        width: 70%;
+        width: 80%;
         display: grid;
         place-items: center;
         gap: 80px;
         grid-template-columns: 2fr 2fr 2fr;
-        margin: 6rem auto;
+        margin: 2rem auto 4rem;
     }
 
     .service {
-        height: 65vh;
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        gap: 40px;
+        min-height: 65vh;
+        display: grid;
+        grid-template-rows: 0.75fr 1fr 1.75fr 0.5fr;
+        gap: 20px;
+        align-items: center;
         padding: 2rem;
         border-radius: 30px;
-        box-shadow: 8px 8px 10px var(--grey-300);
+        box-shadow: 4px 4px 10px var(--black);
         transition: 0.5s;
     }
 
@@ -82,7 +84,7 @@ const Wrapper = styled.div`
     }
 
     .service h3 {
-        width: 60%;
+        width: 90%;
         padding-left: 1rem;
         border-left: 3px solid var(--primary-300);
         text-transform: uppercase;
@@ -96,6 +98,122 @@ const Wrapper = styled.div`
     .service-btn {
         width: 40%;
         font-size: 0.9rem;
+    }
+
+    @media (max-width: 1680px) {
+        .services-description {
+            gap: 50px;
+        }
+    }
+
+    @media (max-width: 1510px) {
+        .img-container {
+            min-height: 40vh;
+        }
+
+        .services-title h3 {
+            width: 80%;
+        }
+
+        .service h3 {
+            font-size: 1.1rem;
+        }
+
+        .service p {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 1220px) {
+        .services-description {
+            grid-template-columns: 3fr 3fr;
+        }
+
+        .service {
+            min-height: 45vh;
+        }
+    }
+
+    @media (max-width: 1000px) {
+        .services-title h2 {
+            width: 70%;
+        }
+
+        .services-title h3 {
+            width: 90%;
+            font-size: 1.1rem;
+        }
+    }
+
+    @media (max-width: 980px) {
+        .service {
+            min-height: 50vh;
+        }
+
+        .service h3 {
+            font-size: 1rem;
+        }
+
+        .service p {
+            font-size: 0.85rem;
+            line-height: 1.7;
+        }
+    }
+
+    @media (max-width: 920px) {
+        .services-description {
+            gap: 30px;
+        }
+
+        .service {
+            gap: 5px;
+            grid-template-rows: 0.75fr 0.75fr 2.5fr 0.5fr;
+        }
+
+        .service-icon {
+            font-size: 3rem;
+        }
+    }
+
+    @media (max-width: 750px) {
+        .services-description {
+            grid-template-columns: 6fr;
+        }
+
+        .service {
+            gap: 15px;
+            min-height: 35vh;
+        }
+    }
+
+    @media (max-width: 560px) {
+        .services-title h2 {
+            width: 80%;
+            font-size: 1.3rem;
+        }
+
+        .services-title span {
+            font-size: 1.3rem;
+        }
+
+        .services-title h3 {
+            width: 95%;
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 420px) {
+        .services-title h2 {
+            font-size: 1.1rem;
+        }
+
+        .services-title span {
+            font-size: 1.2rem;
+        }
+
+        .services-title h3 {
+            font-size: 0.9rem;
+        }
     }
 `;
 

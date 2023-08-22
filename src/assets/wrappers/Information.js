@@ -2,14 +2,13 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .information-container {
-        height: 40vh;
         width: 100%;
+        min-height: 30vh;
         background-color: var(--secondary-300);
         box-shadow: 2px 2px 20px var(--secondary-300);
     }
 
     .elements {
-        height: 100%;
         width: 70%;
         margin: 0 auto;
         display: flex;
@@ -20,7 +19,7 @@ const Wrapper = styled.div`
 
     .elements span {
         font-weight: 600;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         color: var(--primary-100);
     }
 
@@ -38,10 +37,9 @@ const Wrapper = styled.div`
     .data,
     .address,
     .services {
-        height: 100%;
         display: grid;
         gap: 10px;
-        grid-template-rows: 1fr 4fr;
+        grid-template-rows: 1fr 2.5fr;
     }
 
     .mission h2,
@@ -61,11 +59,12 @@ const Wrapper = styled.div`
     .address p,
     .services p {
         padding: 0 0.2rem;
-        font-size: 0.8rem;
+        font-size: 0.85rem;
         font-weight: 200;
         color: var(--white);
         letter-spacing: 1px;
         text-decoration: none;
+        text-align: left;
         line-height: 2.2;
         transition: 0.5s;
         cursor: pointer;
@@ -83,6 +82,106 @@ const Wrapper = styled.div`
     #service-link-menu:hover {
         width: 100%;
         background-color: var(--primary-100);
+    }
+
+    @media (max-width: 1800px) {
+        .elements {
+            gap: 40px;
+        }
+    }
+
+    @media (max-width: 1600px) {
+        .elements {
+            gap: 30px;
+        }
+    }
+
+    @media (max-width: 1550px) {
+        .elements {
+            width: 80%;
+        }
+
+        .mission p,
+        .data p,
+        .address p,
+        .services p {
+            width: 100%;
+        }
+
+        .mission p {
+            line-height: 2;
+        }
+    }
+
+    @media (max-width: 1105px) {
+        .elements {
+            gap: 0;
+        }
+
+        .mission h2,
+        .data h2,
+        .address h2,
+        .services h2 {
+            padding: 0.5rem 0;
+            margin: 0.5rem 0;
+        }
+
+        .mission p,
+        .data p,
+        .address p,
+        .services p {
+            font-size: 0.75rem;
+        }
+
+        .mission p {
+            width: 90%;
+            letter-spacing: 0;
+        }
+    }
+
+    @media (max-width: 1040px) {
+        .elements {
+            flex-direction: column;
+        }
+
+        .mission p {
+            width: 90%;
+            letter-spacing: 1px;
+            line-height: 2.2;
+        }
+
+        .mission,
+        .services,
+        .data {
+            width: 70%;
+        }
+    }
+
+    @media (max-width: 780px) {
+        .mission,
+        .services,
+        .data {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 590px) {
+        .mission,
+        .services,
+        .data {
+            width: 95%;
+        }
+    }
+
+    @media (max-width: 470px) {
+        .mission {
+            display: none;
+        }
+
+        .data p,
+        .services p {
+            font-size: 0.7rem;
+        }
     }
 `;
 

@@ -10,7 +10,7 @@ const services = [
         icon: <GiChicken className="service-icon" />,
         title: 'Audyty mycia i dezynfekcji ferm drobiu',
         description:
-            'Przeprowadzamy kompleksowe audyty mycia i dezynfekcji ferm drobiu, które mają na celu zapewnienie, że środowisko w fermach jest czyste, bezpieczne i zgodne z regulacjami branżowymi. Decydując się na usługę możesz uniknąć ryzyka związanego z potencjalnymi zagrożeniami zdrowotnymi.',
+            'Przeprowadzamy kompleksowe audyty mycia i dezynfekcji ferm drobiu, które mają na celu zapewnienie, że środowisko w fermach jest bezpieczne i zgodne z regulacjami.',
         cls: 'washing',
         to: '/washing-audit'
     },
@@ -19,7 +19,7 @@ const services = [
         icon: <PiCertificateLight className="service-icon" />,
         title: 'Szkolenia podnoszenie kwalifikacji',
         description:
-            'Organizujemy szkolenia dla pracowników oraz kadry zarządzającej w firmach spożywczych. Szkolenia pomagają podnosić kwalifikacje, świadomość oraz kompetencje pracowników, przyczyniając się do lepszej jakości produkcji i działania firmy, przynoszą lepsze rezultaty.',
+            'Organizujemy szkolenia dla pracowników oraz kadry zarządzającej które pomagają podnosić kwalifikacje oraz kompetencje, przyczyniając się do lepszej jakości produkcji.',
         cls: 'training',
         to: '/training'
     },
@@ -28,16 +28,16 @@ const services = [
         icon: <FaHandshakeAngle className="service-icon" />,
         title: 'Audyty systemów zarządzania',
         description:
-            'Przeprowadzamy różnego rodzaju audyty systemów zarządzania. Obejmujące audyty wewnętrzne, pierwszej strony, w których analizuje się zgodność z wewnętrznymi standardami oraz politykami firmy. Druga strona dotyczy dostawców, zapewniając, że ich działania są zgodni z wymaganiami.',
+            'Oferujemy wewnętrzne i zewnętrzne audyty systemów zarządzania. Wewnętrzne, w których analizuje się zgodność ze standardami i zewnętrzne, zapewniające, że działania dostawców są zgodne z wymaganiami.',
         cls: 'systems',
         to: '/systems-audit'
     },
     {
         id: 3,
         icon: <PiFactory className="service-icon" />,
-        title: 'Niezależna ekspertyza oceny zgodności',
+        title: 'Ekspertyza oceny zgodności',
         description:
-            'Dokonujemy niezależnych ekspertyz oceny zgodności. Przeprowadza obiektywne oceny procesów, produktów i systemów w firmach spożywczych. Dzięki temu firmy mogą być pewne, że ich działania są zgodne z wymaganiami regulacyjnymi i standardami jakościowymi.',
+            'Dokonujemy niezależnych ekspertyz oceny zgodności, oceny procesów, produktów i systemów. Dzięki temu firmy mogą być pewne, że ich działania są zgodne z wymaganiami i standardami jakościowymi.',
         cls: 'expertise',
         to: '/expertise'
     },
@@ -46,7 +46,7 @@ const services = [
         icon: <SlMagnifier className="service-icon" />,
         title: 'Zewnętrzne spojrzenie na działanie firmy',
         description:
-            'Dostarczamy zewnętrzne spojrzenie na działanie firm w branży spożywczej, co pozwala na identyfikację obszarów do poprawy oraz optymalizacji. To niewątpliwie przyczynia się do podniesienia konkurencyjności i efektywności operacyjnej.',
+            'Dostarczamy świeże, zewnętrzne spojrzenie na działanie firm, co pozwala na identyfikację obszarów do poprawy, co przyczynia się do podniesienia konkurencyjności i efektywności.',
         cls: 'operations',
         to: '/company-operations'
     },
@@ -55,7 +55,8 @@ const services = [
         icon: <PiChartLineUp className="service-icon" />,
         title: 'Optymalizacja systemów zarządzania',
         description:
-            'Wspieramy firmy w wdrażaniu, analizie, prowadzeniu oraz optymalizacji systemów zarządzania jakością, bezpieczeństwem żywności oraz innymi aspektami operacyjnymi co pomaga osiągnąć i utrzymać wysoki poziom standardów.',
+            'Wspieramy w analizie oraz optymalizacji systemów zarządzania jakością, bezpieczeństwem żywności oraz innymi aspektami operacyjnymi co pomaga osiągnąć i utrzymać wysoki poziom.',
+
         cls: 'optimization',
         to: '/system-optimization'
     }

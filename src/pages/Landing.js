@@ -13,7 +13,7 @@ import servicesTitles from '../utils/servicesTitles';
 import { Link } from 'react-router-dom';
 
 function Landing() {
-    const text = 'Jesteśmy niezastąpionym partnerem dla firm branży spożywczej dostarczającym szeroki zakres usług';
+    const text = `Smakuj sukces razem z nami, z pasją tworzymy nowoczesne rozwiązania dla branży spożywczej...`;
 
     return (
         <Wrapper>

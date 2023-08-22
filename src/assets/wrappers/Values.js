@@ -3,9 +3,8 @@ import styled from 'styled-components';
 const Wrapper = styled.div`
     .values-container {
         position: relative;
-        min-height: 80vh;
         display: grid;
-        grid-template-rows: 0.5fr 4fr;
+        grid-template-rows: 0.5fr 3fr;
         background-color: var(--secondary-200);
         box-shadow: 1px 1px 20px 5px var(--secondary-300);
     }
@@ -35,11 +34,10 @@ const Wrapper = styled.div`
     .value {
         position: relative;
         width: 100%;
-        height: 35vh;
-        padding: 2rem;
+        padding: 1rem;
         display: grid;
         gap: 30px;
-        grid-template-rows: 0.5fr 4fr;
+        grid-template-rows: 0.5fr 3fr;
         box-shadow: 2px 2px 5px 3px var(--black);
         border-radius: 30px;
         overflow: hidden;
@@ -80,6 +78,72 @@ const Wrapper = styled.div`
         letter-spacing: 1px;
         font-weight: 300;
         text-align: justify;
+    }
+
+    @media (max-width: 1600px) {
+        .values {
+            width: 80%;
+        }
+    }
+
+    @media (max-width: 1360px) {
+        .values {
+            width: 90%;
+        }
+    }
+
+    @media (max-width: 1205px) {
+        .value {
+            padding: 1.6rem;
+        }
+
+        .value p {
+            font-size: 1rem;
+            line-height: 1.7;
+        }
+    }
+
+    @media (max-width: 1010px) {
+        .values-container {
+            grid-template-rows: 0.25fr 3fr;
+        }
+
+        .values {
+            width: 70%;
+            display: flex;
+            gap: 80px;
+            flex-direction: column;
+        }
+
+        .value p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            text-align: left;
+        }
+    }
+
+    @media (max-width: 850px) {
+        .values-container h1 {
+            font-size: 1.5rem;
+        }
+
+        .value p {
+            font-size: 1rem;
+        }
+    }
+
+    @media (max-width: 650px) {
+        .values {
+            width: 80%;
+        }
+
+        .value h2 {
+            font-size: 1.4rem;
+        }
+
+        .value p {
+            font-size: 0.95rem;
+        }
     }
 `;
 

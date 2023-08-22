@@ -15,7 +15,7 @@ const Wrapper = styled.div`
         background-repeat: no-repeat;
         background-size: cover;
         z-index: 10;
-        filter: grayscale(90%) blur(1px);
+        filter: grayscale(95%) blur(1px);
     }
 
     .training {
@@ -54,7 +54,7 @@ const Wrapper = styled.div`
     }
 
     .subpage-contents {
-        height: 80vh;
+        min-height: 80vh;
         width: 60%;
         position: absolute;
         top: 50%;
@@ -74,6 +74,7 @@ const Wrapper = styled.div`
         color: var(--primary-300);
         font-weight: 400;
         margin: 1rem;
+        text-align: center;
     }
 
     .subpage-icon {
@@ -111,6 +112,86 @@ const Wrapper = styled.div`
     .banner-container {
         position: relative;
         z-index: 100;
+    }
+
+    @media (max-width: 1510px) {
+        .img-container {
+            min-height: 40vh;
+        }
+    }
+
+    @media (max-width: 1150px) {
+        .subpage-contents {
+            width: 70%;
+        }
+
+        .subpage-title {
+            font-size: 1.4rem;
+        }
+
+        .subpage-description {
+            margin: 1rem 3rem;
+        }
+
+        .subpage-description p {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 760px) {
+        .subpage-contents {
+            width: 90%;
+        }
+
+        .subpage-title {
+            font-size: 1.3rem;
+        }
+    }
+
+    @media (max-width: 630px) {
+        .subpage-container {
+            min-height: 90vh;
+        }
+
+        .subpage-contents {
+            min-height: 100vh;
+        }
+    }
+
+    @media (max-width: 605px) {
+        .subpage-title {
+            font-size: 1.2rem;
+            text-align: center;
+        }
+
+        .subpage-description {
+            line-height: 1.7;
+        }
+
+        .subpage-container h3 {
+            font-size: 0.9rem;
+        }
+    }
+
+    @media (max-width: 500px) {
+        .subpage-container {
+            min-height: 110vh;
+        }
+
+        .subpage-description {
+            margin: 0.75rem 2rem;
+        }
+
+        .subpage-title {
+            font-size: 1.1rem;
+            margin-bottom: 0;
+        }
+    }
+
+    @media (max-width: 460px) {
+        .subpage-container {
+            min-height: 130vh;
+        }
     }
 `;
 
