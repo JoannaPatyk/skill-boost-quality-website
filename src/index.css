@@ -12,20 +12,19 @@
 :root {
     /* COLORS */
 
-    --primary-100: #f28963;
+    /* --primary-100: #f28963;
     --primary-200: #f35e3d;
-    --primary-300: #f24c27;
+    --primary-300: #f24c27; */
 
     --secondary-100: #63776f;
     --secondary-200: #23373c;
     --secondary-300: #0b2126;
 
-    /* 
-    --primary-100: #BFAF7E;
-    --primary-200: #BF8B2A;
-    --primary-300: #BF9A2A;
+    --primary-100: #bfaf7e;
+    --primary-200: #bf8b2a;
+    --primary-300: #bf9a2a;
 
-    --secondary-100: #63776f;
+    /* --secondary-100: #63776f;
     --secondary-200: #2F401E;
     --secondary-300: #1F2614; */
 

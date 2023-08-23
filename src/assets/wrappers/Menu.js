@@ -43,17 +43,17 @@ const Wrapper = styled.div`
     .menu-element {
         min-width: 140px;
         padding: 0.25rem 0.75rem;
-        font-weight: 400;
+        font-weight: 800;
         font-size: 1.2rem;
         text-align: center;
-        letter-spacing: var(--letterSpacing);
-        border: 2px solid var(--primary-300);
-        border-radius: 25px;
+        letter-spacing: 1px;
+        border: 3px solid var(--primary-300);
         transition: var(--transition);
         cursor: pointer;
     }
 
     .menu-element:hover {
+        color: var(--secondary-300);
         transform: scale(0.98);
         background-color: var(--primary-300);
     }
@@ -144,6 +144,11 @@ const Wrapper = styled.div`
             display: block;
             opacity: 1;
         }
+
+        .menu-icon {
+            font-size: 2rem;
+            filter: drop-shadow(1px 1px var(--grey-100));
+        }
     }
 
     @media (max-width: 685px) {
@@ -156,16 +161,15 @@ const Wrapper = styled.div`
         .menu-container h1 {
             font-size: 1.5rem;
         }
-
-        .menu-icon {
-            font-size: 2rem;
-            filter: drop-shadow(1px 1px var(--grey-100));
-        }
     }
 
     @media (max-width: 385px) {
+        .menu-container h1 {
+            font-size: 1.3rem;
+        }
+
         .menu-icon {
-            font-size: 1.8rem;
+            font-size: 1.6rem;
         }
     }
 

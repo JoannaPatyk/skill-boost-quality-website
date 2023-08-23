@@ -22,7 +22,7 @@ function ServicesSubpage({ title, description, icon, cls }) {
                     <img src={backgroundImage} className="dot" alt="Tło" />
                     <h2 className="subpage-title">{title}</h2>
                     <div className="subpage-description">{description}</div>
-                    <h3>Skontaktuj się ze mną aby uzyskać szczegółowe informację odnośnie oferty.</h3>
+                    <h3>Skontaktuj się z nami aby uzyskać szczegółowe informację odnośnie naszej oferty</h3>
                     <button className="btn subpage-btn" onClick={handleClick}>
                         kontakt
                     </button>
@@ -37,7 +37,7 @@ function ServicesSubpage({ title, description, icon, cls }) {
 
 ServicesSubpage.propTypes = {
     title: PropTypes.string,
-    description: PropTypes.string,
+    description: PropTypes.array,
     icon: PropTypes.string,
     cls: PropTypes.string
 };

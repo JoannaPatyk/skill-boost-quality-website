@@ -14,7 +14,8 @@ import servicesTitles from '../utils/servicesTitles';
 import { Link } from 'react-router-dom';
 
 function Landing() {
-    const text = `Smakuj sukces razem z nami, z pasją tworzymy nowoczesne rozwiązania dla branży spożywczej...`;
+    const text1 = `Skorzystaj z naszych usług, smakuj sukces razem z nami`;
+    const text2 = `Z pasją tworzymy nowoczesne rozwiązania dla branży spożywczej`;
 
     return (
         <Wrapper>
@@ -23,7 +24,8 @@ function Landing() {
                     <img src={factoryImage} className="factoryImage" alt="Przedsiębiorstwo" />
                     <div className="landing-title">
                         <h1>
-                            <SlideInAnimation text={text} />
+                            <SlideInAnimation text={text1} />
+                            <SlideInAnimation text={text2} />
                         </h1>
                     </div>
                     {servicesTitles.map(({ id, icon, text, to, cls }) => {

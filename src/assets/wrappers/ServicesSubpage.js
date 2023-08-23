@@ -13,34 +13,33 @@ const Wrapper = styled.div`
         background-attachment: fixed;
         background-position: bottom;
         background-repeat: no-repeat;
-        background-size: cover;
+        background-size: auto;
         z-index: 10;
-        filter: grayscale(95%) blur(1px);
+        filter: grayscale(95%) blur(0.5px);
     }
 
     .training {
-        background-image: url('https://img.freepik.com/darmowe-zdjecie/futurystyczny-projekt-biura-z-nowoczesnym-sprzetem-technologicznym-generowanym-przez-ai_188544-22666.jpg?w=1380&t=st=1692180552~exp=1692181152~hmac=abfeb130716cf06494c6c335c8f27a3fc7cd04a57ff1502eef13fcfb44f167a8');
+        background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/training-M.jpg?raw=true');
     }
 
     .operations {
-        background-image: url('https://cdn.pixabay.com/photo/2020/07/08/04/12/work-5382501_1280.jpg');
+        background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/operations-M.jpg?raw=true');
     }
 
     .optimization {
-        background-image: url('https://cdn.pixabay.com/photo/2018/03/10/12/00/teamwork-3213924_1280.jpg');
+        background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/optimization-M.jpg?raw=true');
     }
 
     .expertise {
-        background-image: url('https://cdn.pixabay.com/photo/2015/09/28/17/10/signature-962388_1280.jpg');
+        background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/expertise-M.jpg?raw=true');
     }
 
     .washing {
-        background-image: url('https://cdn.pixabay.com/photo/2016/11/23/00/39/chicken-1851495_1280.jpg');
+        background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/washing-M.jpg?raw=true');
     }
 
     .systems {
-        filter: grayscale(80%);
-        background-image: url('https://cdn.pixabay.com/photo/2015/07/06/17/05/industry-833517_1280.jpg');
+        background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/systems-M.jpg?raw=true');
     }
 
     .dot {
@@ -69,10 +68,11 @@ const Wrapper = styled.div`
     }
 
     .subpage-contents h3 {
+        width: 70%;
         text-transform: uppercase;
         letter-spacing: 0.05rem;
         color: var(--primary-300);
-        font-weight: 400;
+        font-weight: 300;
         margin: 1rem;
         text-align: center;
     }
@@ -96,12 +96,12 @@ const Wrapper = styled.div`
         margin: 1.5rem 4rem;
         line-height: 2;
         letter-spacing: 1px;
-        /* text-align: justify; */
     }
 
     .subpage-description p {
         margin: 1rem 0;
         font-weight: 400;
+        text-align: justify;
     }
 
     .subpage-btn {
@@ -116,7 +116,7 @@ const Wrapper = styled.div`
 
     @media (max-width: 1510px) {
         .img-container {
-            min-height: 40vh;
+            min-height: 25vh;
         }
     }
 
@@ -138,6 +138,12 @@ const Wrapper = styled.div`
         }
     }
 
+    @media (max-width: 900px) {
+        .dot {
+            display: none;
+        }
+    }
+
     @media (max-width: 760px) {
         .subpage-contents {
             width: 90%;
@@ -145,6 +151,10 @@ const Wrapper = styled.div`
 
         .subpage-title {
             font-size: 1.3rem;
+        }
+
+        .subpage-contents h3 {
+            width: 80%;
         }
     }
 
@@ -155,6 +165,40 @@ const Wrapper = styled.div`
 
         .subpage-contents {
             min-height: 100vh;
+        }
+
+        .training,
+        .operations,
+        .optimization,
+        .expertise,
+        .washing,
+        .systems {
+            background-attachment: local;
+            background-position: center;
+        }
+
+        .training {
+            background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/training-S.jpg?raw=true');
+        }
+
+        .operations {
+            background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/operations-S.jpg?raw=true');
+        }
+
+        .optimization {
+            background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/optimization-S.jpg?raw=true');
+        }
+
+        .expertise {
+            background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/expertise-S.jpg?raw=true');
+        }
+
+        .washing {
+            background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/washing-S.jpg?raw=true');
+        }
+
+        .systems {
+            background-image: url('https://github.com/JoannaPatyk/skill-boost-quality-website/blob/main/src/assets/img/systems-S.jpg?raw=true');
         }
     }
 
@@ -186,6 +230,10 @@ const Wrapper = styled.div`
         .subpage-title {
             font-size: 1.1rem;
             margin-bottom: 0;
+        }
+
+        .subpage-container h3 {
+            font-size: 0.8rem;
         }
     }
 

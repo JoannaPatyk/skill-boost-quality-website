@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .mission-container {
-        min-height: 100vh;
+        margin: 4rem auto;
         width: 100%;
         color: var(--black);
         display: flex;
-        gap: 100px;
+        gap: 90px;
         flex-direction: column;
         align-items: center;
         justify-content: center;
@@ -21,7 +21,7 @@ const Wrapper = styled.div`
     }
 
     .chickenImage {
-        width: 28%;
+        width: 26%;
         opacity: 0.8;
     }
 
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
     .mission-text {
         width: 70%;
         display: flex;
-        gap: 60px;
+        gap: 80px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -133,12 +133,6 @@ const Wrapper = styled.div`
 
         .mission-text p {
             font-size: 0.9rem;
-        }
-    }
-
-    @media (orientation: landscape) and (max-width: 1200px) and (max-height: 700px) {
-        .mission-container {
-            min-height: 100vw;
         }
     }
 `;
