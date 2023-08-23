@@ -9,9 +9,9 @@ function SendMessage() {
                 <h3>
                     z chęcią <span>odpowiem na Twoje</span> pytania
                 </h3>
-                <input type="text" placeholder="Imię" />
-                <input type="email" placeholder="E-mail" />
-                <textarea placeholder="Treść wiadomości"></textarea>
+                <input type="text" placeholder="Imię..." />
+                <input type="email" placeholder="E-mail..." />
+                <textarea placeholder="Treść wiadomości..."></textarea>
                 <div className="checkbox">
                     <input id="checkbox" type="checkbox" name="check" value="checkbox" />
                     <label htmlFor="checkbox">

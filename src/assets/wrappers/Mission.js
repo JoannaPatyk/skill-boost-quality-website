@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const Wrapper = styled.div`
     .mission-container {
-        min-height: 100vh;
+        min-height: 90vh;
         width: 100%;
         color: var(--black);
         display: flex;
@@ -46,7 +46,7 @@ const Wrapper = styled.div`
     .mission-text {
         width: 70%;
         display: flex;
-        gap: 60px;
+        gap: 80px;
         flex-direction: column;
         justify-content: center;
         align-items: center;

@@ -65,6 +65,10 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 985px) {
+        .banner-container {
+            min-height: 15vh;
+        }
+
         .banner-text {
             flex-direction: column;
         }
@@ -79,6 +83,10 @@ const Wrapper = styled.div`
     }
 
     @media (max-width: 585px) {
+        .banner-container {
+            min-height: 13vh;
+        }
+
         .banner-container h1 {
             font-size: 1.4rem;
         }

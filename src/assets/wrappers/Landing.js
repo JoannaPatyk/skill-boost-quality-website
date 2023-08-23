@@ -39,15 +39,15 @@ const Wrapper = styled.div`
 
     .landing-title h1 {
         padding-right: 2rem;
-        width: 60%;
-        font-size: 1.8rem;
-        font-weight: 500;
+        font-size: 2rem;
+        font-weight: 700;
         letter-spacing: 2px;
         line-height: 1.5;
         text-align: right;
         color: var(--white);
         border-right: 6px solid var(--white);
         text-shadow: 1px 1px 5px var(--secondary-300);
+        text-transform: uppercase;
     }
 
     .factoryImage {
@@ -60,13 +60,12 @@ const Wrapper = styled.div`
         position: absolute;
         padding: 0.5rem 1rem;
         text-transform: uppercase;
-        color: var(--black);
+        color: var(--secondary-300);
         font-weight: 700;
         font-size: 1.2rem;
         letter-spacing: 1px;
         background-color: var(--white);
-        border-radius: 25px;
-        box-shadow: 4px 4px 10px 10px var(--black);
+        box-shadow: 4px 4px 5px 5px var(--black);
     }
 
     .dot {
@@ -77,7 +76,7 @@ const Wrapper = styled.div`
         background-color: var(--white);
         box-shadow: 1px 1px 10px 5px var(--secondary-300);
         background-color: var(--white);
-        animation: pulsating 3s linear infinite;
+        animation: pulsating 4s linear infinite;
         transition: 0.5s;
         cursor: pointer;
     }
@@ -158,12 +157,18 @@ const Wrapper = styled.div`
 
     @media (max-width: 1700px) {
         .landing-title h1 {
-            font-size: 1.5rem;
+            font-size: 1.6rem;
         }
 
         .dot {
             width: 1.5rem;
             height: 1.5rem;
+        }
+    }
+
+    @media (max-width: 1460px) {
+        .landing-title h1 {
+            font-size: 1.4rem;
         }
     }
 
@@ -173,7 +178,7 @@ const Wrapper = styled.div`
         }
 
         .landing-title h1 {
-            font-size: 1.4rem;
+            font-size: 1.3rem;
         }
 
         .dot {
@@ -190,15 +195,15 @@ const Wrapper = styled.div`
         .dot h4 {
             font-size: 0.9rem;
         }
+
+        .landing-title h1 {
+            font-size: 1.2rem;
+        }
     }
 
     @media (max-width: 985px) {
         .landing-title {
             height: 13vh;
-        }
-
-        .landing-title h1 {
-            width: 80%;
         }
 
         .dot {

@@ -10,7 +10,7 @@ function Banner() {
                 <Link to="/contact">
                     <div className="banner-text">
                         <h1>
-                            <span>Skontaktuj się</span> ze nami.
+                            <span>Skontaktuj się</span> z nami.
                         </h1>
                         <h1> Razem wypracujemy rozwiązanie!</h1>
                         <MdKeyboardDoubleArrowRight className="banner-icon" />
