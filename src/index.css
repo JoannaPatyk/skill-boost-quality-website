@@ -12,45 +12,17 @@
 :root {
     /* COLORS */
 
-    /* --primary-100: #f28963;
-    --primary-200: #f35e3d;
-    --primary-300: #f24c27; */
-
     --secondary-100: #63776f;
     --secondary-200: #23373c;
     --secondary-300: #0b2126;
 
-    --primary-100: #bfaf7e;
+    /* --primary-100: #bfaf7e;
     --primary-200: #bf8b2a;
-    --primary-300: #bf9a2a;
+    --primary-300: #bf9a2a; */
 
-    /* --secondary-100: #63776f;
-    --secondary-200: #2F401E;
-    --secondary-300: #1F2614; */
-
-    /* --primary-100: #B6B4BF;
-    --primary-200: #5e7575;
-    --primary-300: #465959;
-
-    --secondary-100: #648569;
-    --secondary-200: #36593B;
-    --secondary-300: #244028; */
-
-    /* --primary-100: #b63f3f;
-    --primary-200: #ad2727;
-    --primary-300: #a40f0f;
-
-    --secondary-100: #63776f;
-    --secondary-200: #23373c;
-    --secondary-300: #0b2126; */
-
-    /* --primary-100: #f28963;
-    --primary-200: #f35e3d;
-    --primary-300: #f24c27;
-
-    --secondary-100: #5e5e5e;
-    --secondary-200: #3f3f3f;
-    --secondary-300: #222222; */
+    --primary-100: #f5c1bc;
+    --primary-200: #e66558;
+    --primary-300: #b85146;
 
     --grey-100: #eceded;
     --grey-200: #c2c5c4;
@@ -113,7 +85,6 @@ body {
     width: 45px;
     height: 45px;
     border: none;
-    border-radius: 50%;
     color: var(--white);
     background-color: var(--primary-300);
     box-shadow: 2px 2px 6px 2px var(--secondary-300);

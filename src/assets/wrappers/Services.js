@@ -60,7 +60,7 @@ const Wrapper = styled.div`
     .service {
         min-height: 65vh;
         display: grid;
-        grid-template-rows: 0.75fr 1fr 1.75fr 0.5fr;
+        grid-template-rows: 0.5fr 0.5fr 1fr 0.5fr;
         gap: 20px;
         align-items: center;
         padding: 2rem;

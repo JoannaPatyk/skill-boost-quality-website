@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 const Position = {
-    washing: { top: '48%', left: '78%' },
-    training: { top: '23%', left: '58.2%' },
+    washing: { top: '80%', left: '74%' },
+    training: { top: '25%', left: '75%' },
     systems: { top: '39%', left: '14.5%' },
-    expertise: { top: '23%', left: '35%' },
-    optimization: { top: '58%', left: '26%' },
-    operations: { top: '54%', left: '51%' }
+    expertise: { top: '24%', left: '44%' },
+    optimization: { top: '63%', left: '26%' },
+    operations: { top: '66%', left: '40%' }
 };
 
 const transitionEffect = 'transition: opacity 0.5s, transform 0.5s;';
@@ -29,12 +29,12 @@ const Wrapper = styled.div`
         align-items: center;
         justify-content: center;
         position: absolute;
-        top: 70%;
+        top: 50%;
         left: 50%;
-        transform: translateX(-50%);
+        transform: translate(-50%, -40%);
         width: 100%;
-        height: 15vh;
-        background-color: #39473c84;
+        height: 12vh;
+        background-color: #f3873f84;
     }
 
     .landing-title h1 {
@@ -74,7 +74,7 @@ const Wrapper = styled.div`
         height: 1.8rem;
         border-radius: 50%;
         background-color: var(--white);
-        box-shadow: 1px 1px 10px 5px var(--secondary-300);
+        box-shadow: 1px 1px 10px 5px var(--primary-300);
         background-color: var(--white);
         animation: pulsating 4s linear infinite;
         transition: 0.5s;
@@ -82,7 +82,7 @@ const Wrapper = styled.div`
     }
 
     .dot:hover {
-        background-color: var(--primary-100);
+        background-color: var(--primary-300);
     }
 
     .washing-title,

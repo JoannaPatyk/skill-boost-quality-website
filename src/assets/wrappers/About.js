@@ -13,7 +13,7 @@ const Wrapper = styled.div`
         width: 50%;
         position: absolute;
         opacity: 0.05;
-        z-index: -100;
+        z-index: -1;
     }
 
     .background-img-container {
@@ -26,14 +26,16 @@ const Wrapper = styled.div`
     }
 
     .background-img-container h1 {
+        margin-top: 1rem;
         font-weight: 300;
+        font-size: 2.5rem;
+        letter-spacing: var(--letterSpacing);
     }
 
     .img-container {
-        height: 61vh;
-        width: 61vh;
+        height: 60vh;
+        width: 60vh;
         margin: 1.5rem;
-        border-radius: 50%;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -47,7 +49,7 @@ const Wrapper = styled.div`
     }
 
     hr {
-        width: 60%;
+        width: 65%;
         height: 2px;
         margin: 2rem 0 0.5rem;
     }
@@ -56,12 +58,12 @@ const Wrapper = styled.div`
         margin-top: 1.8rem;
         font-size: 2.5rem;
         animation: arrowDown 1.5s infinite;
-        cursor: pointer;
     }
 
     .arrowIcon-btn {
         border: none;
         background-color: transparent;
+        cursor: pointer;
     }
 
     .about-description-container {
@@ -76,16 +78,20 @@ const Wrapper = styled.div`
 
     .about-description {
         width: 50%;
-        margin: 2rem;
+        margin: 4rem;
         display: flex;
-        gap: 30px;
+        gap: 40px;
         align-items: center;
         justify-content: center;
         flex-direction: column;
         line-height: 1.8;
         letter-spacing: 0.05rem;
         text-align: justify;
-        font-weight: 300;
+        font-weight: 400;
+
+        span {
+            font-weight: 600;
+        }
     }
 
     @media (max-width: 1485px) {
