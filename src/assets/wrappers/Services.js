@@ -58,10 +58,10 @@ const Wrapper = styled.div`
     }
 
     .service {
-        min-height: 65vh;
+        min-height: 50vh;
         display: grid;
-        grid-template-rows: 0.75fr 1fr 1.75fr 0.5fr;
-        gap: 20px;
+        grid-template-rows: 0.4fr 0.4fr 0.6fr 0.4fr;
+        gap: 10px;
         align-items: center;
         padding: 2rem;
         border-radius: 30px;

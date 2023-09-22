@@ -1,6 +1,6 @@
 import React from 'react';
 import Wrapper from '../assets/wrappers/Landing';
-import factoryImage from '../assets/img/bg.jpg';
+import factoryImage from '../assets/img/bg-img.jpg';
 
 import Values from '../components/Values';
 import Mission from '../components/Mission';

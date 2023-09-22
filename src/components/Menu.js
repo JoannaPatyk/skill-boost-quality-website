@@ -10,7 +10,6 @@ function Menu() {
 
     const handleToggle = () => {
         setIsOpen(!isOpen);
-        console.log(isOpen);
     };
 
     const navigate = useNavigate();

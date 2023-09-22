@@ -2,11 +2,11 @@
 
 This is the repository for the Skill Boost Quality Website project. The goal of this project is to create a website for Skill Boost Quality, a company specializing in providing innovative solutions for the food industry, particularly in the field of poultry farm audits.
 
-![Project Preview](src/assets/screen/screen-2.png)
+![Project Preview](src/assets/screen/screen-1.png)
 
 You will find the source code for a dynamic website that promotes the company's services. The website showcases their expertise in delivering quality solutions for the food industry, with a specific focus on poultry farm audits.
 
-![Project Preview](src/assets/screen/screen-3.png)
+![Project Preview](src/assets/screen/screen-2.png)
 
 **Website:** [https://skill-boost-quality-website.onrender.com/](https://skill-boost-quality-website.onrender.com/)
 
